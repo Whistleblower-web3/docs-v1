@@ -1,158 +1,157 @@
 # WikiTruth Docs
 
-基于 Docusaurus 构建的 WikiTruth 项目静态文档站点。
+A static documentation site for the WikiTruth project built with Docusaurus.
 
-## 项目简介
+## Project Overview
 
-WikiTruth 是一个基于 Oasis Sapphire 的隐私证据市场项目。本文档站点使用 Docusaurus 3.x 构建，提供完整的技术文档展示和访问体验。
+WikiTruth is a privacy evidence market project based on Oasis Sapphire. This documentation site is built with Docusaurus 3.x, providing a complete technical documentation display and access experience.
 
-## 技术栈
+## Tech Stack
 
-- **框架**: Docusaurus 3.5.0
-- **语言**: TypeScript
-- **样式**: Tailwind CSS 3.4.15
-- **构建工具**: Docusaurus 内置构建系统
+- **Framework**: Docusaurus 3.5.0
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 3.4.15
+- **Build Tool**: Docusaurus built-in build system
 - **Node.js**: >= 18.0
 
-## 项目结构
+## Project Structure
 
 ```
 docs2/
-├── docs/              # 文档源文件（Markdown）
+├── docs/              # Documentation source files (Markdown)
 ├── src/
-│   ├── components/    # React 组件
-│   ├── css/          # 自定义样式
-│   ├── pages/        # 自定义页面
-│   └── theme/        # 主题组件（自定义 Navbar/Footer 已保留）
-├── static/           # 静态资源（图片、logo 等）
-├── docusaurus.config.ts  # Docusaurus 配置文件
-├── sidebars.ts       # 侧边栏配置
-└── package.json      # 项目依赖
+│   ├── components/    # React components
+│   ├── css/          # Custom styles
+│   ├── pages/        # Custom pages
+│   └── theme/        # Theme components (custom Navbar/Footer preserved)
+├── static/           # Static assets (images, logos, etc.)
+├── docusaurus.config.ts  # Docusaurus configuration file
+├── sidebars.ts       # Sidebar configuration
+└── package.json      # Project dependencies
 ```
 
-## 快速开始
+## Quick Start
 
-### 安装依赖
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 开发模式
+### Development Mode
 
 ```bash
 npm run start
 ```
 
-启动后访问 `http://localhost:3000`
+Access the site at `http://localhost:3000` after startup.
 
-### 构建生产版本
+### Build Production Version
 
 ```bash
 npm run build
 ```
 
-构建产物位于 `build/` 目录
+Build output is located in the `build/` directory.
 
-### 预览构建结果
+### Preview Build Results
 
 ```bash
 npm run serve
 ```
 
-### 清理缓存
+### Clear Cache
 
 ```bash
 npm run clear
 ```
 
-## 主要功能
+## Main Features
 
-- ✅ 完整的文档展示系统
-- ✅ 响应式设计，支持移动端
-- ✅ 深色主题（shadcn dark mode）
-- ✅ 自定义样式（主题色：`#c6a9fc`）
-- ✅ 代码高亮（支持 Solidity、Bash、JSON 等）
-- ✅ 文档搜索功能（Docusaurus 内置）
+- ✅ Complete documentation display system
+- ✅ Responsive design with mobile support
+- ✅ Dark theme (shadcn dark mode)
+- ✅ Custom styling (theme color: `#c6a9fc`)
+- ✅ Code highlighting (supports Solidity, Bash, JSON, etc.)
+- ✅ Documentation search functionality (Docusaurus built-in)
 
-## UI 风格
+## UI Style
 
-- **主题色**: `#c6a9fc` (紫色)
-- **背景**: 黑色主题
-- **字体**: 等宽字体（monospace）
-- **Navbar**: 深色背景，毛玻璃效果
-- **Footer**: 深色背景，社区链接
+- **Theme Color**: `#c6a9fc` (purple)
+- **Background**: Dark theme
+- **Font**: Monospace font
+- **Navbar**: Dark background with glassmorphism effect
+- **Footer**: Dark background with community links
 
-## 文档结构
+## Documentation Structure
 
-文档按以下分类组织：
+Documents are organized into the following categories:
 
-- 简介与背景
-- 技术文档
-- 功能细节
+- Introduction & Background
+- Technical Documentation
+- Feature Details
 - Tokenomics
-- 未来计划
-- 治理与合规
-- 技术展望
+- Future Plans
+- Governance & Compliance
+- Technical Outlook
 
-## 配置说明
+## Configuration
 
-### Navbar 配置
+### Navbar Configuration
 
-当前使用 Docusaurus 默认 Navbar，配置在 `docusaurus.config.ts` 中：
+Currently using Docusaurus default Navbar, configured in `docusaurus.config.ts`:
 
 - Logo: `/logo/logo-2.svg`
-- 导航链接: Home, Roadmap, Blog, Team, Docs
-- Beta App 按钮
+- Navigation links: Home, Roadmap, Blog, Team, Docs
+- Beta App button
 
-### Footer 配置
+### Footer Configuration
 
-Footer 包含：
+Footer includes:
 
-- Community 链接（Twitter, Telegram, Discord, GitHub, Email）
-- Legal 链接（Terms of Service）
-- 版权信息
+- Community links (Twitter, Telegram, Discord, GitHub, Email)
+- Legal links (Terms of Service)
+- Copyright information
 
-### 自定义组件
+### Custom Components
 
-自定义的 Navbar 和 Footer 组件已保留在 `src/theme/` 目录中，文件名为 `index.custom.tsx`，可在后续需要时启用。
+Custom Navbar and Footer components are preserved in the `src/theme/` directory with the filename `index.custom.tsx`, and can be enabled when needed in the future.
 
-## 开发说明
+## Development Guide
 
-### 添加新文档
+### Adding New Documents
 
-1. 在 `docs/` 目录下创建 Markdown 文件
-2. 在 `sidebars.ts` 中添加文档引用
-3. 重新启动开发服务器
+1. Create a Markdown file in the `docs/` directory
+2. Add document reference in `sidebars.ts`
+3. Restart the development server
 
-### 修改样式
+### Modifying Styles
 
-主要样式文件位于 `src/css/custom.css`，包含：
+Main style file is located at `src/css/custom.css`, containing:
 
-- Tailwind CSS 配置
-- 主题变量定义
-- Navbar/Footer 样式定制
-- 代码块和引用块样式
+- Tailwind CSS configuration
+- Theme variable definitions
+- Navbar/Footer style customization
+- Code block and quote block styles
 
-### 静态资源
+### Static Assets
 
-静态资源（图片、logo 等）放在 `static/` 目录下，可通过 `/path/to/file` 访问。
+Static assets (images, logos, etc.) are placed in the `static/` directory and can be accessed via `/path/to/file`.
 
-## 部署
+## Deployment
 
-构建完成后，将 `build/` 目录的内容部署到静态网站托管服务（如 GitHub Pages、Netlify、Vercel 等）。
+After building, deploy the contents of the `build/` directory to a static website hosting service (such as GitHub Pages, Netlify, Vercel, etc.).
 
-## 相关链接
+## Related Links
 
-- **主站**: https://wikitruth.io
+- **Main Site**: https://wikitruth.io
 - **Beta App**: https://beta.wikitruth.io
-- **文档站点**: https://docs.wikitruth.io
+- **Documentation Site**: https://docs.wikitruth.io
 
-## 许可证
+## License
 
-本项目为私有项目。
+This project is a private project.
 
-## 更新日志
+## Changelog
 
-- **v1.0.0** (2025-01): 初始版本，基于 Docusaurus 3.5.0 构建
-
+- **v1.0.0** (2025-01): Initial version, built with Docusaurus 3.5.0

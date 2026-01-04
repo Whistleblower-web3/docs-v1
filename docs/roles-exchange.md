@@ -31,6 +31,8 @@ sidebar:
 
 ### About Confidential Data Viewing Permissions
 
+The following table shows the permissions to view confidential data (private key) in the Box when it is in these states. For example: when the Box is in Storing state, only Minter can view confidential data.
+
 | Status | Role |
 | --- | --- |
 | Storing | Minter |
