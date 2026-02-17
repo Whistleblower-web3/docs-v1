@@ -7,19 +7,19 @@ sidebar:
 
 ### 智能合约架构
 
-WikiTruth 采用模块化智能合约，部署在 **Oasis Sapphire**（EVM 兼容隐私公链）。机密数据在链上以加密形式存储，并通过 SIWE 令牌校验权限。
+Wiki Truth 采用模块化智能合约，部署在 **Oasis Sapphire**（EVM 兼容隐私公链）。机密数据在链上以加密形式存储，并通过 SIWE 令牌校验权限。
 
-> 在测试网中，核心合约支持 Proxy 升级，在不变更地址与数据的情况下升级业务逻辑。主网合约则是不可升级合约
+> 测试网中，核心合约支持 Proxy 升级，在不变更地址与数据的情况下升级业务逻辑。主网合约则是不可升级合约
 
 **核心模块**
 
 - `AddressManager.sol`：统一管理核心合约地址、DAO、支持代币与 DEX 白名单。
-- `SiweAuthWikiTruth.sol`：SIWE 身份认证，支持多域名校验，适配 Sapphire 零地址场景。
-- `UserId.sol`：用户 ID/黑名单管理，保护链上身份隐私。
+- `SiweAuthWiki Truth.sol`：SIWE 身份认证，支持多域名校验，适配 Sapphire 零地址场景。
+- `UserId.sol`：用户 ID/黑名单管理，用来作为合约事件日志参数，保护链上身份隐私。
 - `TruthBox.sol`：核心资产合约，管理状态机、定价与期限，使用 Sapphire TEE 加密存储机密数据。
-- `TruthNFT.sol`：ERC-721，负责 Truth Box 的铸造、转移与元数据。
+- `TruthNFT.sol`：ERC-721标准的NFT合约，创建Truth Box的副产物，用于实现本项目在NFT市场的展示流通与跨链能力，增强Wiki Truth生态的影响能力。
 - `Exchange.sol`：交易引擎，处理 Sell/Auction/Buy/Bid/Refund/Complete 全流程。
-- `FundManager.sol`：资金托管与分配，支持多币种支付与 DEX 兑换。
+- `FundManager.sol`：资金托管与分配，负责多币种支付、自动兑换 (DEX 交互) 及收益分配。
 
 #### 网络与合约部署（主网/测试网）
 

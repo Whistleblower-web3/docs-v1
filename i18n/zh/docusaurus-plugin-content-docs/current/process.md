@@ -1,20 +1,38 @@
 ﻿---
 title: 运行流程
-description: 从本地加密到上链铸造、交易、保密与公开的全流程示意。
+description: 从真相加密铸造到市场博弈、延迟披露与最终公开的全流程解析。
 sidebar:
   order: 4
 ---
 
-### 运行流程
+### 核心运行流程
+
+Wiki Truth 通过智能合约将传统的线下事实披露流程转化为链上可量化的**价值博弈流程**。
+
+在协议运行中，涉及三类核心角色：**吹哨人 (Minter)**、**Buyer** 以及**Helpers: Seller/Completer**。
 
 ![简单流程](/docs/symbol-process.svg)
 
-假设(Criminal)进行了一些违法行为，证据被（Minter）掌握并在wikitruth上出售，而需求方（Buyer）需要购买以规避风险或试图推迟真相公开，流程如下：
+#### 1. 真相资产化 (Assetization)
 
-- **铸造 Truth Box**：上传加密文件以及元数据上传到 IPFS/Arweave，并在合约中铸造 Truth Box。
-- **交易**：Truth Box可被上架出售或拍卖，Helper（Seller\Completer）则可能参与代理出售/完成交易，DAO治理则会在交易发生纠纷时参与审核。
-- **保密期**：交易完成后进入保密期，Buyer需按期支付保密费可延长保密期，否则 Truth Box 将自动公开。
-- **公开**：保密期到期或无人购买时自动公开，让真相回到公众视野。
+- **上传**：上传证据文件与元数据至 IPFS/Arweave。
+- **铸造**：在智能合约中铸造 **Truth Box**。
 
-WikiTruth 的价值来自“掩盖真相”的高成本：遮蔽者不得不支付费用与保密成本，真相才会被迫走向公开；而提供证据、维护秩序的参与者获得回报，形成长期可持续的正向激励。
+#### 2. 市场流通 (Market Circulation)
 
+- **出售/拍卖**：Minter 可在保护期内发起出售或拍卖。
+- **Help Sell**：若超时，任何人都可以辅助出售，成为Seller。
+
+#### 3. 交割与验证 (Delivery)
+
+- **购买**：Buyer 支付后，获得访问权。
+- **验货期**：Buyer 可选择申请退款，或者完成订单；
+- **Help Complete**：若超时，任何人都可以辅助完成订单，成为Completer。
+
+#### 4. 延迟披露与博弈 (Delayed Disclosure & Game)
+
+- **延迟状态**：交易完成后，Box进入“Delaying”状态。
+- **延迟费用**：Buyer 需定期支付**延迟费用 (Delayed Fee)**。
+- **最终披露**：如果 Buyer 停止支付延迟费用，Box将自动进入“Published”状态，真相被披露，完成其最终的社会价值兑现。
+
+---

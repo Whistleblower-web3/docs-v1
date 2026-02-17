@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'WikiTruth Docs',
-  tagline: 'Documentation for the privacy evidence market based on Oasis Sapphire',
+  tagline: 'The first decentralized whistleblower incentive and criminal evidence market',
   favicon: '/logo/logo-3.svg',
 
   url: 'https://docs.wikitruth.xyz',
@@ -66,8 +66,8 @@ const config: Config = {
       title: 'Wiki Truth',
       logo: {
         alt: 'WikiTruth Logo',
-        src: '/logo/logo-2.svg',
-        srcDark: '/logo/logo-2.svg',
+        src: '/logo/logo.svg',
+        srcDark: '/logo/logo.svg',
         width: 36,
         height: 36,
       },
@@ -78,21 +78,21 @@ const config: Config = {
           label: 'Home',
           position: 'left',
         },
-        {
-          href: 'https://wikitruth.xyz/roadmap',
-          label: 'Roadmap',
-          position: 'left',
-        },
-        {
-          href: 'https://wikitruth.xyz/blog',
-          label: 'Blog',
-          position: 'left',
-        },
-        {
-          href: 'https://wikitruth.xyz/team',
-          label: 'Team',
-          position: 'left',
-        },
+        // {
+        //   href: 'https://wikitruth.xyz/roadmap',
+        //   label: 'Roadmap',
+        //   position: 'left',
+        // },
+        // {
+        //   href: 'https://wikitruth.xyz/blog',
+        //   label: 'Blog',
+        //   position: 'left',
+        // },
+        // {
+        //   href: 'https://wikitruth.xyz/team',
+        //   label: 'Team',
+        //   position: 'left',
+        // },
         {
           type: 'docSidebar',
           sidebarId: 'docs',
@@ -114,28 +114,28 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/WikiTruth-crypto',
-            },
-            {
-              label: 'Email',
-              href: 'mailto:wikitruth@proton.me',
-            },
-          ],
-        },
-        {
-          title: 'Legal',
-          items: [
-            {
-              label: 'Terms of Service',
-              href: '#',
-            },
-          ],
-        },
+        // {
+        //   title: 'Community',
+        //   items: [
+            // {
+            //   label: 'GitHub',
+            //   href: 'https://github.com/WikiTruth-crypto',
+            // },
+            // {
+            //   label: 'Email',
+            //   href: 'mailto:wikitruth@proton.me',
+            // },
+        //   ],
+        // },
+        // {
+        //   title: 'Legal',
+        //   items: [
+            // {
+            //   label: 'Terms of Service',
+            //   href: '#',
+            // },
+        //   ],
+        // },
       ],
       copyright: `© ${new Date().getFullYear()} WikiTruth. All rights reserved.`,
     },

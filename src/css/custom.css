@@ -1,407 +1,131 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* shadcn dark */
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0); /* old dark: oklch(0.141 0.005 285.823) */
-  --foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --card: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
-  --card-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --popover: oklch(1 0 0); /* old dark: oklch(0.21 0.006 285.885) */
-  --popover-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) */
-  --primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
-  --secondary: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
-  --secondary-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
-  --muted: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
-  --muted-foreground: oklch(0.556 0 0); /* old dark: oklch(0.705 0.015 286.067) */
-  --accent: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
-  --accent-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
-  --destructive: oklch(0.577 0.245 27.325); /* old dark: oklch(0.704 0.191 22.216) */
-  --border: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 40%) */
-  --input: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 15%) */
-  --ring: oklch(0.708 0 0); /* old dark: oklch(0.527 0.154 150.069) */
-  --chart-1: oklch(0.646 0.222 41.116); /* old dark: oklch(0.488 0.243 264.376) */
-  --chart-2: oklch(0.6 0.118 184.704); /* old dark: oklch(0.696 0.17 162.48) */
-  --chart-3: oklch(0.398 0.07 227.392); /* old dark: oklch(0.769 0.188 70.08) */
-  --chart-4: oklch(0.828 0.189 84.429); /* old dark: oklch(0.627 0.265 303.9) */
-  --chart-5: oklch(0.769 0.188 70.08); /* old dark: oklch(0.645 0.246 16.439) */
-  --sidebar: oklch(0.985 0 0); /* old dark: oklch(0.21 0.006 285.885) */
-  --sidebar-foreground: oklch(0.145 0 0); /* old dark: oklch(0.985 0 0) */
-  --sidebar-primary: oklch(0.205 0 0); /* old dark: oklch(0.696 0.17 162.48) */
-  --sidebar-primary-foreground: oklch(0.985 0 0); /* old dark: oklch(0.393 0.095 152.535) */
-  --sidebar-accent: oklch(0.97 0 0); /* old dark: oklch(0.274 0.006 286.033) */
-  --sidebar-accent-foreground: oklch(0.205 0 0); /* old dark: oklch(0.985 0 0) */
-  --sidebar-border: oklch(0.922 0 0); /* old dark: oklch(1 0 0 / 10%) */
-  --sidebar-ring: oklch(0.708 0 0); /* old dark: oklch(0.527 0.154 150.069) */
-
-  /* disabled */
-  --disabled: #232327;
-  --disabledText: #3b3b3d;
-
-  /* order status */
-  --Storing: #4db325;
-  --OnSale: #b0b306;
-  --Waiting: #e28b19;
-  --Paid: #c7480d;
-  --Refunding: #bd0fb4;
-  --InSecrecy: #5e0fdd;
-  --Published: #3d63e0;
-  --Blacklisted: #4f5055;
-  /* theme color */
-  --theme: #c6a9fc;
-
-  /* font */
-  --font-brand: 'Wallpoet', cursive;
+  /* Core Theme Color */
+  --primary: #c6a9fc;
+  
+  /* Font Families */
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-
-  /* compatibility variable */
-  --color-theme: var(--theme);
-  --color-error: #ff4d4f;
-  --color-success: #52c41a;
-  --color-warning: #faad14;
-
-  /* business status color - mapped to Tailwind */
-  --color-Storing: var(--Storing);
-  --color-OnSale: var(--OnSale);
-  --color-Waiting: var(--Waiting);
-  --color-Paid: var(--Paid);
-  --color-Refunding: var(--Refunding);
-  --color-InSecrecy: var(--InSecrecy);
-  --color-Blacklisted: var(--Blacklisted);
-  --color-Published: var(--Published);
-
-  /* corner variable */
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
-}
-
-/* dark mode variable (Docusaurus default uses .dark class) */
-html[data-theme='dark'],
-.dark {
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.696 0.17 162.48);
-  --primary-foreground: oklch(0.393 0.095 152.535);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 40%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.527 0.154 150.069);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.527 0.154 150.069);
-}
-
-/* basic style reset */
-@layer base {
-  * {
-    border-color: var(--border);
-  }
-
-  html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    color: white;
-    background: black;
-    font-size: 1rem;
-    line-height: 1.7;
-    letter-spacing: 0.01em;
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-mono);
-  }
-
-  p, span, div, text {
-    font-family: var(--font-mono);
-    word-spacing: -0.2em;
-    color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-/* Tailwind utility classes - theme color */
-@layer utilities {
-  .text-theme {
-    color: var(--theme);
-  }
   
-  .bg-theme {
-    background-color: var(--theme);
-  }
-  
-  .border-theme {
-    border-color: var(--theme);
-  }
-  
-  .hover\:text-theme:hover {
-    color: var(--theme);
-  }
-  
-  .font-title {
-    font-family: var(--font-mono);
-  }
-  
-  .font-brand {
-    font-family: var(--font-brand);
-  }
-}
-
-/* Docusaurus style override */
-:root {
-  --ifm-color-primary: var(--theme);
+  /* Docusaurus Variables Override (Shared) */
+  --ifm-color-primary: var(--primary);
   --ifm-color-primary-dark: #b894fa;
   --ifm-color-primary-darker: #ad82f9;
   --ifm-color-primary-darkest: #9455f6;
   --ifm-color-primary-light: #d4befd;
   --ifm-color-primary-lighter: #dfcffd;
   --ifm-color-primary-lightest: #f5f0fe;
+  
   --ifm-code-font-size: 95%;
-  --ifm-font-color-base: white;
-  --ifm-background-color: black;
-  --ifm-background-surface-color: #1a1a1a;
-  --ifm-navbar-background-color: rgba(0, 0, 0, 0.5);
-  --ifm-footer-background-color: rgba(0, 0, 0, 0.9);
-  --ifm-menu-color: rgba(255, 255, 255, 0.9);
-  --ifm-menu-color-active: var(--theme);
-  --ifm-toc-link-color: rgba(255, 255, 255, 0.7);
+  --ifm-font-family-base: var(--font-mono);
+  --ifm-font-family-monospace: var(--font-mono);
 }
 
-html[data-theme='dark'] {
-  --ifm-background-color: black;
-  --ifm-background-surface-color: #1a1a1a;
+/* Force Dark Mode Styles */
+html[data-theme='dark'],
+:root {
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #111111;
+  --ifm-footer-background-color: #000000;
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.9);
+  --ifm-font-color-base: rgba(255, 255, 255, 0.9);
+  --ifm-heading-color: #ffffff;
+  --ifm-toc-link-color: rgba(255, 255, 255, 0.6);
+  --ifm-menu-color: rgba(255, 255, 255, 0.8);
+  --ifm-menu-color-active: var(--primary);
+  --ifm-link-color: var(--primary);
+  
+  /* Custom Global Background */
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
 }
 
-/* Docusaurus default Navbar and Footer style customization */
-/* Make the default Navbar and Footer styles consistent with the custom version */
+@layer base {
+  body {
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    background: var(--ifm-background-color);
+  }
+}
 
-/* Navbar style */
+@layer utilities {
+  .text-primary { color: var(--primary); }
+  .bg-primary { background-color: var(--primary); }
+  .border-primary { border-color: var(--primary); }
+}
+
+/* UI Component Overrides */
+
+/* Navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.95) !important;
-  backdrop-filter: blur(8px) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar__brand {
-  color: var(--theme) !important;
-  font-weight: bold !important;
-}
-
-.navbar__item {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.navbar__item:hover {
-  color: var(--theme) !important;
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: var(--primary) !important;
+  font-weight: 700;
 }
 
 .navbar__link--active {
-  color: var(--theme) !important;
-  font-weight: bold !important;
+  color: var(--primary) !important;
 }
 
-/* Hide the external link icons in the Navbar */
+/* Hide Unwanted Icons in Navbar (Language, External Links, etc.) */
 .navbar__item svg,
 .navbar__link svg,
 .navbar__item .iconExternalLink,
 .navbar__link .iconExternalLink,
-.navbar__item .iconExternalLink_nPIU,
-.navbar__link .iconExternalLink_nPIU,
-.navbar__item use[href="#theme-svg-external-link"],
-.navbar__link use[href="#theme-svg-external-link"] {
+.navbar__item [class*='iconExternalLink'],
+.navbar__link [class*='iconExternalLink'] {
   display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  opacity: 0 !important;
 }
 
-/* Footer style */
+/* Footer */
 .footer {
-  background-color: rgba(0, 0, 0, 0.95) !important;
-  backdrop-filter: blur(8px) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
-  color: rgba(255, 255, 255, 0.9) !important;
+  background-color: #000000 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer__link-item {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.footer__link-item:hover {
-  color: var(--theme) !important;
-}
-
-.footer__copyright {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-/* Hide the external link icons in the Footer */
-.footer__link-item svg,
-.footer__link-item .iconExternalLink,
-.footer__link-item .iconExternalLink_nPIU,
-.footer__link-item use[href="#theme-svg-external-link"] {
-  display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  opacity: 0 !important;
-}
-
-/* quote block style */
-blockquote {
-  background-color: rgba(183, 181, 184, 0.137) !important;
-  border-left: 4px solid var(--theme) !important;
-  border-radius: 4px;
-  padding: 1.5rem 1rem !important;
-  margin: 2rem 0 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-style: normal !important;
-}
-
-/* ensure the text style inside the quote block */
-blockquote p {
-  margin: 0 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-/* other elements inside the quote block */
-blockquote * {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-/* hide the breadcrumb navigation in the document page */
-.theme-doc-breadcrumbs,
-.breadcrumbs,
-.breadcrumbs__item,
-.breadcrumbs__link {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* hide the document title (if needed to hide in the content area) */
-/* note: this will hide the first h1 title in the document content */
-.theme-doc-markdown > h1:first-child {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* title style in the document content -加大、加粗 */
+/* Docs Content */
 .theme-doc-markdown h1,
 .theme-doc-markdown h2,
-.theme-doc-markdown h3,
-.theme-doc-markdown h4,
-.theme-doc-markdown h5,
-.theme-doc-markdown h6 {
-  font-weight: 600 !important;
-  font-weight: medium !important;
-  color: rgba(255, 255, 255, 0.95) !important;
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
-  line-height: 1.3 !important;
-  font-family: var(--font-mono);
-}
-
-/* h1 title - maximum */
-.theme-doc-markdown h1 {
-  font-size: 2.25rem !important;
-  margin-top: 2.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
-/* h2 title */
-.theme-doc-markdown h2 {
-  font-size: 1.875rem !important;
-  margin-top: 2.25rem !important;
-  margin-bottom: 1.25rem !important;
-}
-
-/* h3 title (e.g. "Core Features") */
 .theme-doc-markdown h3 {
-  font-size: 1.5rem !important;
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
+  color: #ffffff;
+  font-weight: 600;
 }
 
-/* h4 title */
-.theme-doc-markdown h4 {
-  font-size: 1.25rem !important;
-  margin-top: 1.75rem !important;
-  margin-bottom: 0.875rem !important;
+blockquote {
+  background: rgba(46, 44, 58, 0.6);
+  border-left: 4px solid var(--primary);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
 }
 
-/* h5 title */
-.theme-doc-markdown h5 {
-  font-size: 1.125rem !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.75rem !important;
+/* Hide Unwanted Elements */
+.theme-doc-breadcrumbs,
+.breadcrumbs {
+  display: none !important;
 }
 
-/* h6 title */
-.theme-doc-markdown h6 {
-  font-size: 1rem !important;
-  margin-top: 1.25rem !important;
-  margin-bottom: 0.625rem !important;
+/* Copyable Address (used in copyAddress.js) */
+.copyable-address-cell {
+  color: var(--primary);
+  font-family: var(--font-mono);
+  transition: opacity 0.2s;
 }
 
-/* 可复制的地址单元格样式 */
-.theme-doc-markdown table td.copyable-address-cell {
-  cursor: pointer !important;
-  user-select: none !important;
-  transition: color 0.2s ease, opacity 0.2s ease !important;
+.copyable-address-cell:hover {
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
-.theme-doc-markdown table td.copyable-address-cell:hover {
-  opacity: 0.8 !important;
-  color: var(--theme) !important;
+/* Hide External Link Icons */
+.iconExternalLink_nPIU,
+.iconExternalLink {
+  display: none !important;
 }
-
-.theme-doc-markdown table td.copyable-address-cell:active {
-  opacity: 0.6 !important;
-}
-

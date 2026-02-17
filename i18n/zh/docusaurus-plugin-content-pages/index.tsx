@@ -9,7 +9,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="WikiTruth 文档"
-      description="基于 Oasis Sapphire 的隐私证据市场文档">
+      description="首个去中心化的吹哨人激励与犯罪证据市场">
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8">
           <img src={logoSrc} alt="WikiTruth Logo" width={120} height={120} className="mx-auto mb-6" />
@@ -17,19 +17,19 @@ export default function Home(): JSX.Element {
             WikiTruth 文档
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8">
-            基于 Oasis Sapphire 的隐私证据市场文档
+            首个去中心化的吹哨人激励与犯罪证据市场
           </p>
         </div>
         
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <Link
-            className="px-8 py-3 bg-theme text-white rounded-lg hover:opacity-80 transition text-lg font-semibold"
-            to="/zh/docs/intro">
+            className="px-8 py-3 bg-primary text-white rounded-lg hover:opacity-80 transition text-lg font-semibold"
+            to="/docs/intro">
             开始阅读
           </Link>
           <Link
             className="px-8 py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition text-lg font-semibold border border-white/20"
-            to="/zh/docs/overview">
+            to="/docs/overview">
             项目概览
           </Link>
         </div>
@@ -38,27 +38,27 @@ export default function Home(): JSX.Element {
           <h2 className="text-2xl font-bold mb-6 text-white">快速导航</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
             <Link
-              to="/zh/docs/overview"
+              to="/docs/overview"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
-              <h3 className="text-theme font-semibold mb-2">项目概览</h3>
+              <h3 className="text-primary font-semibold mb-2">项目概览</h3>
               <p className="text-white/70 text-sm">了解 WikiTruth 的核心概念和特性</p>
             </Link>
             <Link
-              to="/zh/docs/smart-contracts"
+              to="/docs/smart-contracts"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
-              <h3 className="text-theme font-semibold mb-2">技术文档</h3>
+              <h3 className="text-primary font-semibold mb-2">技术文档</h3>
               <p className="text-white/70 text-sm">智能合约架构和技术实现</p>
             </Link>
             <Link
-              to="/zh/docs/truth-box"
+              to="/docs/truth-box"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
-              <h3 className="text-theme font-semibold mb-2">功能细节</h3>
+              <h3 className="text-primary font-semibold mb-2">功能细节</h3>
               <p className="text-white/70 text-sm">真相盒子、状态机制等功能</p>
             </Link>
             <Link
-              to="/zh/docs/faq"
+              to="/docs/faq"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
-              <h3 className="text-theme font-semibold mb-2">常见问题</h3>
+              <h3 className="text-primary font-semibold mb-2">常见问题</h3>
               <p className="text-white/70 text-sm">解答常见疑问</p>
             </Link>
           </div>
@@ -67,4 +67,3 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
-

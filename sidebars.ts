@@ -17,6 +17,7 @@ const sidebars: SidebarsConfig = {
         'overview',
         'pain-points',
         'social-principle',
+        "legal-and-cases",
         'process',
       ],
     },

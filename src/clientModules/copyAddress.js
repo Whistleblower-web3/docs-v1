@@ -64,14 +64,14 @@ if (typeof window !== 'undefined') {
       if (success) {
         // Show copy success feedback
         const originalColor = cell.style.color || '';
-        cell.style.color = 'var(--theme)';
+        cell.style.color = 'var(--primary)';
         
         // Add checkmark
         const checkmark = document.createElement('span');
         checkmark.textContent = ' ✓';
         checkmark.style.marginLeft = '8px';
         checkmark.style.fontSize = '0.875rem';
-        checkmark.style.color = 'var(--theme)';
+        checkmark.style.color = 'var(--primary)';
         cell.appendChild(checkmark);
 
         // 2 seconds later restore
@@ -86,14 +86,14 @@ if (typeof window !== 'undefined') {
 
     // Hover effect
     cell.addEventListener('mouseenter', function () {
-      if (!cell.style.color || cell.style.color === 'var(--theme)') {
+      if (!cell.style.color || cell.style.color === 'var(--primary)') {
         return;
       }
       cell.style.opacity = '0.8';
     });
 
     cell.addEventListener('mouseleave', function () {
-      if (!cell.style.color || cell.style.color === 'var(--theme)') {
+      if (!cell.style.color || cell.style.color === 'var(--primary)') {
         return;
       }
       cell.style.opacity = '1';

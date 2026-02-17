@@ -16,14 +16,16 @@ WikiTruth adopts a Decentralized Autonomous Organization (DAO) model, where the 
 
 ### Arbitration and Blacklist Rules
 
--   **Blacklist Governance**: The DAO can ban, refund, or destroy non-compliant addresses/Truth Boxes, with all operations recorded on-chain.
--   **Dispute Adjudication**: In scenarios such as refunds/arbitration, the DAO has the final power of adjudication and can authorize a multi-signature security council to handle high-risk events in emergencies.
--   **Openness and Transparency**: All proposals, votes, handling resolutions, and multi-signature operations should be publicly accessible.
+- **Blacklist Governance**: The DAO can ban, refund, or destroy non-compliant addresses/Truth Boxes, with all operations recorded on-chain.
+- **Dispute Adjudication**: In scenarios such as refunds/arbitration, the DAO has the final power of adjudication and can authorize a multi-signature security council to handle high-risk events in emergencies.
+- **Openness and Transparency**: All proposals, votes, handling resolutions, and multi-signature operations should be publicly accessible.
 
 ### DAO Funds
 
--   **Witness Protection Fund**: Provides legal aid and financial support to participants who upload criminal evidence on the Truth Market and are willing to turn state's witness, helping them avoid threats of legal risks and encouraging more people to participate in reporting and disclosing criminal activities.
+![Service Fee Allocation](/docs/service-fee-allocation.svg)
 
--   **Legal Advisory Fund**: Hires professional legal advisors in key rule-of-law countries to provide compliance advice, respond to legal challenges in different countries and regions, ensure the legitimacy and continuous operation of the project, and ensure the smooth operation of the Truth Market under various legal frameworks.
+- **Witness Protection Fund**: Provides legal aid and financial support to participants who upload criminal evidence on the Truth Market and are willing to turn state's witness, helping them avoid threats of legal risks and encouraging more people to participate in reporting and disclosing criminal activities.
 
--   **Ecosystem Development Fund**: Used to promote the marketing and expansion of the Truth Market. By organizing online and offline activities (seminars, lectures, exhibitions, community gatherings, etc.), it enhances the project's influence, strengthens user loyalty, and attracts more participants.
+- **Legal Advisory Fund**: Hires professional legal advisors in key rule-of-law countries to provide compliance advice, respond to legal challenges in different countries and regions, ensure the legitimacy and continuous operation of the project, and ensure the smooth operation of the Truth Market under various legal frameworks.
+
+- **Ecosystem Development Fund**: Used to promote the marketing and expansion of the Truth Market. By organizing online and offline activities (seminars, lectures, exhibitions, community gatherings, etc.), it enhances the project's influence, strengthens user loyalty, and attracts more participants.

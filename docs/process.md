@@ -1,19 +1,38 @@
 ---
-title: Operational Process
-description: Schematic of the full process from local encryption to on-chain minting, trading, confidentiality, and disclosure.
+title: Core Process
+description: Analysis of the entire process from truth encryption and minting to market games, delayed disclosure, and final publication.
 sidebar:
   order: 4
 ---
 
-### Operational Process
+### Core Operational Process
+
+WikiTruth transforms the traditional offline fact disclosure process into an on-chain quantifiable **value game process** through smart contracts.
+
+In the protocol operation, three core roles are involved: **Whistleblower (Minter)**, **Buyer**, and **Helpers: Seller/Completer**.
 
 ![Simple Process](/docs/symbol-process.svg)
 
-Suppose a (Criminal) has committed some illegal acts, and the evidence is held by a (Minter) and sold on WikiTruth, while the demander (Buyer) needs to buy it to avoid risks or try to delay the disclosure of the truth. The process is as follows:
+#### 1. Truth Assetization
 
--   **Mint Truth Box**: Upload encrypted files and metadata to IPFS/Arweave, and mint a Truth Box in the contract.
--   **Trading**: The Truth Box can be listed for sale or auction. Helpers (Seller\Completer) may participate in proxy selling/completing transactions, and DAO governance will participate in audits when trading disputes occur.
--   **Confidentiality Period**: After the transaction is completed, it enters the confidentiality period. The Buyer needs to pay the confidentiality fee on time to extend the confidentiality period, otherwise the Truth Box will be automatically disclosed.
--   **Disclosure**: Automatically disclosed when the confidentiality period expires or no one buys it, letting the truth return to the public eye.
+- **Upload**: Upload evidence files and metadata to IPFS/Arweave.
+- **Mint**: Mint a **Truth Box** in the smart contract.
 
-WikiTruth's value comes from the high cost of "covering up the truth": the concealer has to pay fees and confidentiality costs before the truth is forced to go public; while participants who provide evidence and maintain order receive returns, forming a long-term sustainable positive incentive.
+#### 2. Market Circulation
+
+- **Sell/Auction**: The Minter can initiate a sale or auction within the protection period.
+- **Help Sell**: If the time limit is exceeded, anyone can assist in selling and become a Seller.
+
+#### 3. Delivery and Verification
+
+- **Purchase**: After the Buyer pays, access rights are granted.
+- **Inspection Period**: The Buyer can choose to request a refund or complete the order;
+- **Help Complete**: If the time limit is exceeded, anyone can assist in completing the order and become a Completer.
+
+#### 4. Delayed Disclosure & Game
+
+- **Delaying Status**: After the transaction is completed, the Box enters the "Delaying" status.
+- **Delayed Fee**: The Buyer needs to pay the **Delayed Fee** regularly.
+- **Final Disclosure**: If the Buyer stops paying the delayed fee, the Box will automatically enter the "Published" status, the truth will be disclosed, fulfilling its final social value realization.
+
+---

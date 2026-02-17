@@ -5,9 +5,9 @@ sidebar:
   order: 15
 ---
 
-### Native Token WTRC
+### Test Token WTRC
 
-Truth Coin (WTRC) is the native token of the WikiTruth ecosystem, used for in-platform transactions, governance, and incentives. The total supply is fixed, and the token is the core infrastructure supporting the sustainable development of the ecosystem.
+In the current testnet, Truth Coin (WTRC) is a token used for project testing, covering platform transactions, governance, and incentives. Test tokens do not possess any real-world value.
 
 ### Token Allocation Plan
 

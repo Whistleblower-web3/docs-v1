@@ -1,25 +1,25 @@
 ---
 title: Smart Contract Architecture
-description: Modular contracts on Sapphire, upgrades, and mainnet/testnet placeholder information.
+description: Modular contracts on Sapphire, upgrades, and Mainnet/Testnet placeholder information.
 sidebar:
   order: 5
 ---
 
 ### Smart Contract Architecture
 
-WikiTruth adopts modular smart contracts deployed on **Oasis Sapphire** (EVM-compatible privacy public chain). Confidential data is stored on-chain in encrypted form, and permissions are verified through SIWE tokens.
+WikiTruth uses modular smart contracts deployed on **Oasis Sapphire** (EVM-compatible privacy public chain). Confidential data is stored on-chain in encrypted form and permissions are verified via SIWE tokens.
 
-> In the testnet, core contracts support Proxy upgrades, upgrading business logic without changing addresses and data. Mainnet contracts are non-upgradable contracts.
+> In the testnet, core contracts support Proxy upgrades, allowing business logic upgrades without changing addresses and data. Mainnet contracts are immutable contracts.
 
 **Core Modules**
 
--   `AddressManager.sol`: Unifies management of core contract addresses, DAO, and supports token and DEX whitelists.
--   `SiweAuthWikiTruth.sol`: SIWE identity authentication, supports multi-domain verification, adapts to Sapphire zero-address scenarios.
--   `UserId.sol`: User ID/blacklist management, protects on-chain identity privacy.
--   `TruthBox.sol`: Core asset contract, manages state machine, pricing, and duration, uses Sapphire TEE to encrypt and store confidential data.
--   `TruthNFT.sol`: ERC-721, responsible for minting, transferring, and metadata of Truth Boxes.
--   `Exchange.sol`: Trading engine, handles the full process of Sell/Auction/Buy/Bid/Refund/Complete.
--   `FundManager.sol`: Fund custody and allocation, supports multi-currency payment and DEX exchange.
+- `AddressManager.sol`: Unifies management of core contract addresses, DAO, supported tokens, and DEX whitelists.
+- `SiweAuthWikiTruth.sol`: SIWE identity authentication, supporting multi-domain verification, adapted for Sapphire zero-address scenarios.
+- `UserId.sol`: User ID/Blacklist management, used as contract event log parameters to protect on-chain identity privacy.
+- `TruthBox.sol`: Core asset contract, managing state machine, pricing, and deadlines, using Sapphire TEE to store confidential data encrypted.
+- `TruthNFT.sol`: ERC-721 standard NFT contract, a byproduct of creating a Truth Box, used to implement the display circulation and cross-chain capability of this project in the NFT market, enhancing the influence of the WikiTruth ecosystem.
+- `Exchange.sol`: Trading engine, handling the full flow of Sell/Auction/Buy/Bid/Refund/Complete.
+- `FundManager.sol`: Fund custody and allocation, responsible for multi-currency payment, automatic exchange (DEX interaction), and revenue distribution.
 
 #### Network and Contract Deployment (Mainnet/Testnet)
 
