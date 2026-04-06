@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'WikiTruth Docs',
-  tagline: 'The first decentralized whistleblower incentive and criminal evidence market',
-  favicon: '/logo/logo-3.svg',
+  tagline: 'Decentralized whistleblower incentive and criminal evidence market',
+  favicon: '/logo/logo-black.svg',
 
   url: 'https://docs.wikitruth.xyz',
   baseUrl: '/',
@@ -105,7 +105,7 @@ const config: Config = {
         },
         {
           href: 'https://app.wikitruth.xyz',
-          label: 'Beta App',
+          label: 'Launch App',
           position: 'right',
           className: 'button button--primary',
         },
@@ -117,23 +117,23 @@ const config: Config = {
         // {
         //   title: 'Community',
         //   items: [
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/WikiTruth-crypto',
-            // },
-            // {
-            //   label: 'Email',
-            //   href: 'mailto:wikitruth@proton.me',
-            // },
+        // {
+        //   label: 'GitHub',
+        //   href: 'https://github.com/WikiTruth-crypto',
+        // },
+        // {
+        //   label: 'Email',
+        //   href: 'mailto:wikitruth@proton.me',
+        // },
         //   ],
         // },
         // {
         //   title: 'Legal',
         //   items: [
-            // {
-            //   label: 'Terms of Service',
-            //   href: '#',
-            // },
+        // {
+        //   label: 'Terms of Service',
+        //   href: '#',
+        // },
         //   ],
         // },
       ],

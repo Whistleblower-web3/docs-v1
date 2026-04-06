@@ -71,13 +71,13 @@ npm run clear
 - ✅ Complete documentation display system
 - ✅ Responsive design, mobile-friendly
 - ✅ Dark theme (shadcn dark mode)
-- ✅ Custom styling (theme color: `#c6a9fc`)
+- ✅ Custom styling (theme color: `#b8f600`)
 - ✅ Code highlighting (supports Solidity, Bash, JSON, etc.)
 - ✅ Documentation search (Docusaurus built-in)
 
 ## UI Style
 
-- **Theme Color**: `#c6a9fc` (purple)
+- **Theme Color**: `#b8f600` (green)
 - **Background**: Black theme
 - **Font**: Monospace font
 - **Navbar**: Dark background with glassmorphism effect
@@ -101,7 +101,7 @@ Documents are organized into the following categories:
 
 Currently using Docusaurus default Navbar, configured in `docusaurus.config.ts`:
 
-- Logo: `/logo/logo-2.svg`
+- Logo: `/logo/logo.svg`
 - Navigation links: Home, Roadmap, Blog, Team, Docs
 - Beta App button
 

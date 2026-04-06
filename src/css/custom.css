@@ -1,36 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
+
   /* Core Theme Color */
-  --primary: #c6a9fc;
-  
-  /* Font Families */
-  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --primary: #b8f600;
   
   /* Docusaurus Variables Override (Shared) */
   --ifm-color-primary: var(--primary);
-  --ifm-color-primary-dark: #b894fa;
-  --ifm-color-primary-darker: #ad82f9;
-  --ifm-color-primary-darkest: #9455f6;
-  --ifm-color-primary-light: #d4befd;
-  --ifm-color-primary-lighter: #dfcffd;
-  --ifm-color-primary-lightest: #f5f0fe;
+  --ifm-color-primary-dark: #91b918ff;
+  --ifm-color-primary-darker: #4c6801ff;
+  --ifm-color-primary-darkest: rgb(63, 85, 2);
+  --ifm-color-primary-light: #b9e951;
+  --ifm-color-primary-lighter: #caf076;
+  --ifm-color-primary-lightest: #d3f096;
   
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: var(--font-mono);
-  --ifm-font-family-monospace: var(--font-mono);
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-font-family-heading: "Plus Jakarta Sans", sans-serif;
 }
 
 /* Force Dark Mode Styles */
 html[data-theme='dark'],
 :root {
   --ifm-background-color: #000000;
-  --ifm-background-surface-color: #111111;
+  --ifm-background-surface-color: #1d1d1d;
   --ifm-footer-background-color: #000000;
   --ifm-navbar-background-color: rgba(0, 0, 0, 0.9);
-  --ifm-font-color-base: rgba(255, 255, 255, 0.9);
+  --ifm-font-color-base: rgba(255, 255, 255, 0.8);
   --ifm-heading-color: #ffffff;
   --ifm-toc-link-color: rgba(255, 255, 255, 0.6);
   --ifm-menu-color: rgba(255, 255, 255, 0.8);
@@ -44,8 +46,9 @@ html[data-theme='dark'],
 
 @layer base {
   body {
-    font-family: var(--font-mono);
+    font-family: var(--ifm-font-family-base);
     -webkit-font-smoothing: antialiased;
+    font-weight: 300;
     background: var(--ifm-background-color);
   }
 }
@@ -93,14 +96,16 @@ html[data-theme='dark'],
 .theme-doc-markdown h1,
 .theme-doc-markdown h2,
 .theme-doc-markdown h3 {
+  font-family: var(--ifm-font-family-heading);
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 blockquote {
   background: rgba(46, 44, 58, 0.6);
   border-left: 4px solid var(--primary);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(188, 230, 122, 0.8);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 4px;
@@ -115,7 +120,7 @@ blockquote {
 /* Copyable Address (used in copyAddress.js) */
 .copyable-address-cell {
   color: var(--primary);
-  font-family: var(--font-mono);
+  font-family: var(--ifm-font-family-base);
   transition: opacity 0.2s;
 }
 

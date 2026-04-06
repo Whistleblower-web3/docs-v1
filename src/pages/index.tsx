@@ -4,8 +4,8 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home(): JSX.Element {
-  const logoSrc = useBaseUrl('/logo/logo-2.svg');
-  
+  const logoSrc = useBaseUrl('/logo/logo.svg');
+
   return (
     <Layout
       title="WikiTruth Docs"
@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
             The first decentralized whistleblower incentive and criminal evidence market
           </p>
         </div>
-        
+
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <Link
             className="px-8 py-3 bg-primary text-white rounded-lg hover:opacity-80 transition text-lg font-semibold"
