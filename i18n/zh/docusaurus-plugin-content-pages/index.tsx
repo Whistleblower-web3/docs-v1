@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
 
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <Link
-            className="px-8 py-3 bg-primary text-white rounded-lg hover:opacity-80 transition text-lg font-semibold"
+            className="px-8 py-3 bg-primary text-black hover:text-black rounded-lg hover:opacity-80 transition text-lg font-semibold"
             to="/docs/intro">
             开始阅读
           </Link>
