@@ -1,86 +1,63 @@
 ---
-title: Truth Box
-description: On-chain data structure and encrypted storage method of Truth Box.
+title: What is a Truth Box?
+description: An in-depth analysis of the core encrypted information container and access right asset in Wiki Truth.
 sidebar:
-  order: 8
+  order: 1
 ---
 
-- Truth Box is a unique, non-transferable carrier of truth access rights. It is the core asset of the entire project, implementing the access control entry for core confidential data, and managing state transitions and lifecycle.
+## What is a Truth Box?
 
-### On-chain Data Structure
+In the Wiki Truth system, a **Truth Box** is the fundamental asset unit of the entire passive disclosure network (Truth Box Market).
 
-```solidity
-struct PublicData {
-  Status _status;
-  uint256 _price;
-  uint256 _deadline;
-}
+You can think of it as an **encrypted safe with a smart time lock**. After a whistleblower places confidential evidence into this safe, the safe begins to count down and is placed on the decentralized public market for circulation.
 
-struct SecretData {
-  address _minter;
-  bytes _encryptedData; // Encrypted payload (private key / evidence key)
-  bytes32 _nonce;       // Encrypted nonce, requires decryption
-}
-```
+---
 
-- **PublicData**: Public status, pricing, and deadline, used for transaction matching and expiration determination.
-- **SecretData**: Confidential fields encrypted by Sapphire TEE, containing the creator's address, encrypted confidential data ciphertext, and nonce; can only be unsealed by authorized SIWE + contract verification.
+### 1. Core Features of the Truth Box
 
-### metadata-Box
+The Truth Box is not an ordinary NFT in the traditional sense or simple stored data. It possesses the following three unique system-level features:
 
-There are two types of metadata files for TruthBox, corresponding to the two ways of creating a TruthBox: `create` and `createAndPublish`. The following shows their main differences.
+#### 🔐 State Machine & Time Lock
 
-<!-- TODO The following two codes should implement tab switching display -->
+The circulation process of the Truth Box will change the state machine `Status` and the time lock `deadline`, and access permissions need to be controlled through the state machine and the time lock.
 
-#### create
+#### 📈 Delay Disclosure Premium
 
-Contains symmetrically encrypted data.
+Wiki Truth introduces a unique "Time Financialization Game Mechanism". Buyers can pay a fee to maintain the confidentiality of the Truth Box, which we call the **Delay Disclosure Premium**.
 
-```json
-{
-  "mint_method": "create",
-  "encryption_slices_metadata_cid": {
-    "encryption_data": "0xabae872298fe488793f17df3e79c5dd4e8f8e9f9da0cf1edee035314887c7192deb7ada30b04915e0602a75c001991ecc570966430f9cf6fa06d3d8fb53caa1e02d7417447f91957336525",
-    "encryption_iv": "0x76ed0699369e1b84988d424b"
-  },
-  "encryption_file_cid": [
-    {
-      "encryption_data": "0x71f4e8844358d32996f98a27c807fffdd706dec902764f6ba00221ca5e3e16c80c42a86a65c6f975ad1ce6d566cdccda5335d7379985956c39fb1bffb51e0dc9510f2c48cf7a1985cf7487",
-      "encryption_iv": "0x11bcacd05f25f5fb5dc88191"
-    },
-    {
-      "encryption_data": "0xd3d0d4d7f519cc846dfd2faeaf0cc3de1be26fdd7e0b7405778d6c42d9da140f6f281e318a45331fc5f65ea4b2dccc61bbc36ddc02a34a1fea31eb05b59ae5ba762c3136f58ace71c57245",
-      "encryption_iv": "0x827b3181516cb4283ac44a76"
-    }
-  ],
-  "encryption_password": {
-    "encryption_data": "0xbad15d202fc944949086f1d490d169f2b17b49f71fd0ca63020348b8060e8166c6a485c0c3c87d59d8810b6e8480a73cf1900287722afc053296d4522e9dc51ed8f72b7ab6f3f9ae65440aef7b6f3518",
-    "encryption_iv": "0x3dd46d0c6a9df5c8e7bf9b3f"
-  },
-  "public_key": "0x3059301306072a8648ce3d020106082a8648ce3d03010703420004cdb130ae2d72132ec0369c11873353f22ddb09e4f0d52c221c9d673090596bc38fab6d842690d0ce6aedf7fddc740fd1572c2511e86728b1332b6eb8732ad9ca",
-  "file_cid_list": []
-}
-```
+![Delay Disclosure Premium Growth Chart](/docs/delayed-fee-curve.svg)
 
-#### createAndPublish
+This is a highly innovative mechanism of the Truth Box. Buyers can extend the time lock by paying a fee. This is an **exponentially increasing** fee over time. This means that attempting to permanently cover up the truth with money is economically impossible.
 
-Directly public Truth Box, so no encryption is needed, and it does not contain symmetrically encrypted data, but directly stores the CID of the files.
+> The specific rate growth coefficient and period are determined by the DAO community through governance contract voting and can be dynamically adjusted based on market feedback.
 
-```json
-{
-  "mint_method": "createAndPublish",
-  // "encryption_slices_metadata_cid": {
-  //   "encryption_data": "",
-  //   "encryption_iv": ""
-  // },
-  // "encryption_file_cid": [],
-  // "encryption_password": {
-  //   "encryption_data": "",
-  //   "encryption_iv": ""
-  // },
-  // "public_key": "",
-  "file_cid_list": [
-    "bafkreibnsg36tgfxsoyq3jb6dfwwb3ffunn3mrrd6twlj6p5mhstfym3xy"
-  ]
-}
-```
+#### ⏳ Inevitable Disclosure
+
+If the Truth Box is not purchased, or if the buyer stops paying the delay protection fee after purchasing, **the smart contract will automatically release the key, disclosing the confidential content inside to the whole world**.
+
+> It is precisely because of the inevitable disclosure characteristic of the Truth Box that rational criminals will typically turn themselves in proactively rather than attempting to use money to cover up the truth. This is also the original intention of Wiki Truth.
+
+---
+
+### 2. Commodity Essence: Access Rights, Not Copyright
+
+- **Not Trading Intellectual Property (Not Copyright)**: Purchasing a Truth Box does not mean the buyer obtains the copyright, trade secret ownership, or other exclusive intellectual property rights of the evidence content. The Truth Box itself cannot be bought and resold like an NFT.
+- **Trading "Access Rights"**: What the buyer is truly purchasing is the **unique decryption access capability** to the confidential content.
+
+Once the Truth Box's state machine enters the final `Published` state, the exclusive access rights to the asset also become invalid, and the truth will be open to the public for free.
+
+---
+
+### 3. Why is the Truth Box Needed?
+
+Traditional anonymous tip-off letters often sink like a stone due to a lack of commercial incentives, resulting in the truth being permanently covered up.
+
+The mechanism design of the Truth Box transforms these two traditional dead ends into a **transparent open game**:
+
+- It provides **whistleblowers** with a safe, highly certain, and trustless monetization channel.
+- It levies a fee (purchase and delay disclosure premium) on those **attempting to cover up the truth (criminals)**.
+- It brings society and the **public** a highly probable expectation of ultimately obtaining the truth.
+
+> The core value of Wiki Truth is not just providing an anonymous upload tool, but creating an **economic closed loop where information moves from a hidden state to a public one**.
+
+Having understood the basic concept of the Truth Box, we will next delve into what underlying data it actually contains ([**Data Structure**](./truth-box-data.md)), and what key stages it will go through during its circulation ([**State Mechanism**](./truth-box-status-mechanism.md)).

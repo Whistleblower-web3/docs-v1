@@ -3,78 +3,88 @@
     "intro",
     {
       "type": "category",
-      "label": "简介与背景",
+      "label": "1. 现状与问题 (Problem)",
       "items": [
-        "overview",
         "pain-points",
-        "social-principle",
-        "legal-and-cases",
-        "process"
+        "social-principle"
       ]
     },
     {
       "type": "category",
-      "label": "技术文档",
+      "label": "2. 解决方案与产品 (Solution & Product)",
       "items": [
-        "smart-contracts",
-        "secret-token",
-        "security"
+        "product"
       ]
     },
     {
       "type": "category",
-      "label": "功能细节",
+      "label": "3. 真相盒子市场 (Truth Box Market)",
       "items": [
         "truth-box",
-        "status-mechanism",
-        "create-process",
-        "roles-exchange"
+        "truth-box-data",
+        "truth-box-status-mechanism",
+        "truth-box-market-process",
+        "truth-box-create",
+        "truth-box-exchange",
+        "truth-box-smart-contracts"
       ]
     },
     {
       "type": "category",
-      "label": "Tokenomics",
+      "label": "4. 悬赏市场 (Bounty Market)",
+      "items": [
+        "bounty-token"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "4. 代币经济学 (Tokenomics)",
       "items": [
         "rewards-fee",
+        "privacy-token",
         "token-allocation"
+
       ]
     },
     {
       "type": "category",
-      "label": "未来计划",
+      "label": "5. 安全与防御模型 (Security Model)",
       "items": [
-        "reward-market"
+        "technical-solution",
+        "user-privacy",
+        "challenge"
       ]
     },
     {
       "type": "category",
-      "label": "治理与合规",
+      "label": "6. 治理与合规 (Governance & Legal)",
       "items": [
         "dao",
+        "legal-and-cases",
         "safety",
         "blacklist"
       ]
     },
     {
       "type": "category",
-      "label": "技术展望",
+      "label": "7. 愿景与附录 (Vision & Appendix)",
       "items": [
-        "industry-dilemma",
-        "innovative",
-        "enlightenment",
-        "challenge"
+        "future",
+        "dilemma",
+        "faq",
+        "statement"
       ]
     },
     {
       "type": "category",
-      "label": "未来愿景与附录",
+      "label": "8. 意义与启示 (Meaning)",
       "items": [
-        "future",
-        "faq",
-        "statement",
+        "industry-dilemma",
+        "commercial",
+        "innovative",
+        "enlightenment",
         "thanks"
       ]
     }
   ]
 }
-

@@ -7,6 +7,10 @@
     "message": "首页",
     "description": "Navbar item with label Home"
   },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
   "item.label.Beta App": {
     "message": "测试应用",
     "description": "Navbar item with label Beta App"

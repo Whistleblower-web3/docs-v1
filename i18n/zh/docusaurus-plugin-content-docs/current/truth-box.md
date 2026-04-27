@@ -1,86 +1,63 @@
 ﻿---
-title: 真相盒子（Truth Box）
-description: Truth Box 的链上数据结构与加密存储方式。
+title: 什么是真相盒子 (Truth Box)？
+description: 深入解析 Wiki Truth 中的核心加密信息容器与访问权资产。
 sidebar:
-  order: 8
+  order: 1
 ---
 
-- Truth Box 是独特的、不可转让的真相访问权限载体。是整个项目的核心资产，实现核心机密数据的访问控制入口，管理状态流转和生命周期。
+## 什么是真相盒子 (Truth Box)？
 
-### 链上数据结构
+在 Wiki Truth 系统中，**Truth Box（真相盒子）** 是整个被动披露网络（Truth Box Market）的基础资产单位。
 
-```solidity
-struct PublicData {
-  Status _status;
-  uint256 _price;
-  uint256 _deadline;
-}
+你可以把它想象成一个**拥有智能时间锁的加密保险箱**。吹哨人将机密证据放入这个保险箱后，保险箱便开始倒计时，并被放置在去中心化的公开市场上进行流通。
 
-struct SecretData {
-  address _minter;
-  bytes _encryptedData; // Encrypted payload (private key / evidence key)
-  bytes32 _nonce;       // Encrypted nonce, requires decryption
-}
-```
+---
 
-- **PublicData**：公开的状态、定价与截止时间，用于交易撮合与到期判定。
-- **SecretData**：由 Sapphire TEE 加密的机密字段，含创建者地址、机密数据密文与随机数；仅经授权的 SIWE + 合约校验方可解封。
+### 1. Truth Box 的核心特性
 
-### metadata-Box
+Truth Box 并不是传统意义上的普通 NFT 或简单的存储数据，它具备以下三个独特的系统级特性：
 
-TruthBox 的元数据文件有两种,分别对应创建 TruthBox 的两种方式：`create`和`createAndPublish`， 以下展示了它们的主要区别。
+#### 🔐 状态机与时间锁 (State Machine & Time Lock)
 
-<!-- TODO 以下两个code，应该实现tab切换展示的方式 -->
+Truth Box 的流转过程，会改变状态机`Status`、时间锁`deadline`，而访问权限则需要通过状态机和时间锁来控制。
 
-#### create
+#### 📈 延迟披露溢价 (Delay Disclosure Premium)
 
-包含了对称加密后的数据。
+Wiki Truth 引入了独特的“时间金融化博弈机制”。Buyer可以通过支付费用来维持Truth Box的保密状态，我们将此费用称为**延迟披露溢价**。
 
-```json
-{
-  "mint_method": "create",
-  "encryption_slices_metadata_cid": {
-    "encryption_data": "0xabae872298fe488793f17df3e79c5dd4e8f8e9f9da0cf1edee035314887c7192deb7ada30b04915e0602a75c001991ecc570966430f9cf6fa06d3d8fb53caa1e02d7417447f91957336525",
-    "encryption_iv": "0x76ed0699369e1b84988d424b"
-  },
-  "encryption_file_cid": [
-    {
-      "encryption_data": "0x71f4e8844358d32996f98a27c807fffdd706dec902764f6ba00221ca5e3e16c80c42a86a65c6f975ad1ce6d566cdccda5335d7379985956c39fb1bffb51e0dc9510f2c48cf7a1985cf7487",
-      "encryption_iv": "0x11bcacd05f25f5fb5dc88191"
-    },
-    {
-      "encryption_data": "0xd3d0d4d7f519cc846dfd2faeaf0cc3de1be26fdd7e0b7405778d6c42d9da140f6f281e318a45331fc5f65ea4b2dccc61bbc36ddc02a34a1fea31eb05b59ae5ba762c3136f58ace71c57245",
-      "encryption_iv": "0x827b3181516cb4283ac44a76"
-    }
-  ],
-  "encryption_password": {
-    "encryption_data": "0xbad15d202fc944949086f1d490d169f2b17b49f71fd0ca63020348b8060e8166c6a485c0c3c87d59d8810b6e8480a73cf1900287722afc053296d4522e9dc51ed8f72b7ab6f3f9ae65440aef7b6f3518",
-    "encryption_iv": "0x3dd46d0c6a9df5c8e7bf9b3f"
-  },
-  "public_key": "0x3059301306072a8648ce3d020106082a8648ce3d03010703420004cdb130ae2d72132ec0369c11873353f22ddb09e4f0d52c221c9d673090596bc38fab6d842690d0ce6aedf7fddc740fd1572c2511e86728b1332b6eb8732ad9ca",
-  "file_cid_list": []
-}
-```
+![延迟披露溢价增长图](/docs/delayed-fee-curve.svg)
 
-#### createAndPublish
+这是 Truth Box 非常重要的创新机制。买家可以通过支付费用来延长时间锁。这是一笔随着时间呈**指数级递增**的费用。这意味着，试图通过金钱永远掩盖真相，在经济模型上是不可能完成的。
 
-直接公开的Truth Box，所以不需要加密，也不包含对称加密后的数据，而是直接存储了文件的 CID。
+> 具体的费率增长系数与周期由 DAO 社区通过治理合约投票决定，可根据市场反馈进行动态调整。
 
-```json
-{
-  "mint_method": "createAndPublish",
-  // "encryption_slices_metadata_cid": {
-  //   "encryption_data": "",
-  //   "encryption_iv": ""
-  // },
-  // "encryption_file_cid": [],
-  // "encryption_password": {
-  //   "encryption_data": "",
-  //   "encryption_iv": ""
-  // },
-  // "public_key": "",
-  "file_cid_list": [
-    "bafkreibnsg36tgfxsoyq3jb6dfwwb3ffunn3mrrd6twlj6p5mhstfym3xy"
-  ]
-}
-```
+#### ⏳ 必然公开 (Inevitable)
+
+Truth Box 如果未被购买，或者购买后买家停止支付延期保护费，**智能合约将自动释放密钥，向全世界公开其中的机密内容**。
+
+> 正是由于Truth Box必然公开的特性，所以理性的犯罪分子通常情况下会在第一时间主动投案自首，而不是试图通过金钱掩盖真相。这也是Wiki Truth的初衷。
+
+---
+
+### 2. 商品本质：访问权，而非版权
+
+- **交易的不是知识产权 (Not Copyright)**：购买 Truth Box，并不意味着买方获得了证据内容的著作权、商业秘密所有权或其他独占性知识产权，Truth Box 本身不能像NFT那样被买来转卖。
+- **交易的是“访问权” (Access Rights)**：买家真正购买的是对机密内容的**唯一解密访问能力**。
+
+一旦 Truth Box 的状态机进入最终的 `Published`（已公开状态），该资产的独占访问权也随之失效，真相将免费向公众开放。
+
+---
+
+### 3. 为什么需要 Truth Box？
+
+传统的匿名举报信往往因为缺乏商业激励而石沉大海，导致真相被永久掩盖。
+
+Truth Box 的机制设计，将这两种传统的死局转化为了一种**透明的阳谋博弈**：
+
+- 为**吹哨人**提供了安全、高确定性且无需信任的变现渠道。
+- 为**试图掩盖真相的（犯罪分子）**征收了一笔费用（购买和延迟披露溢价）。
+- 为**社会公众**带来了最终获取真相的大概率预期。
+
+> Wiki Truth 的核心价值不仅仅是提供一个匿名上传工具，而是打造一个**信息从隐秘状态走向公开的经济闭环**。
+
+了解了 Truth Box 的基本概念后，接下来我们将深入了解它究竟包含了哪些底层数据（[**数据结构**](./truth-box-data.md)），以及它在流转中会经历哪些关键阶段（[**状态机制**](./status-mechanism.md)）。

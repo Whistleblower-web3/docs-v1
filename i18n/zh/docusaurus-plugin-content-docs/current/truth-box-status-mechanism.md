@@ -1,5 +1,5 @@
 ﻿---
-title: 状态机制
+title: Truth Box 状态机制
 description: Truth Box 生命周期状态、参数对比与超时规则。
 sidebar:
   order: 9
@@ -37,10 +37,11 @@ enum Status(
 
 1. 铸造时可选择 Store（默认）或直接 Publish。
 2. 只有 Storing 状态的 Box 可以 Sell 或 Auction。
-3. Selling/Auctioning 到期无人购买将转为 Published；
-4. Selling如有买家则进入 Paid, Auctioning则需要等待deadline截止才会转为Paid。
-5. Paid 状态下买家可申请退款进入Refunding，或者完成订单进入Delaying。
-6. 维持Delaying 需支付时间费用；到期自动转为 Published。
+3. Selling/Auctioning 无人购买，deadline到期自动转为Published；
+4. Selling状态下，有买家购买，就会进入 Paid； Auctioning状态下，需要等待deadline截止才会转为Paid。
+5. Paid 状态下，如果买家申请退款，就进入Refunding，或者完成订单进入Delaying。
+6. Delaying状态就是我们说的延期披露状态，这个状态需要持续支付延时费用；
+7. 如果没有支付延时费用，deadline到期自动转为 Published。
 
 ### 状态期限
 

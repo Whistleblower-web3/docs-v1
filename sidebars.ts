@@ -2,90 +2,96 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
  * Sidebar configuration
- * Based on sidebar.js structure
- * English is the default language
+ * Synchronized with the updated document structure.
  */
 const sidebars: SidebarsConfig = {
-  // Default sidebar (English)
-  // Note: In i18n mode, Docusaurus automatically handles language prefixes
   docs: [
-    'intro',
+    "intro",
     {
-      type: 'category',
-      label: 'Introduction & Background',
-      items: [
-        'overview',
-        'pain-points',
-        'social-principle',
+      "type": "category",
+      "label": "1. Status Quo & Problem",
+      "items": [
+        "pain-points",
+        "social-principle"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "2. Solution & Product",
+      "items": [
+        "product"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "3. Truth Box Market",
+      "items": [
+        "truth-box",
+        "truth-box-data",
+        "truth-box-status-mechanism",
+        "truth-box-market-process",
+        "truth-box-create",
+        "truth-box-exchange",
+        "truth-box-smart-contracts"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "4. Bounty Market",
+      "items": [
+        "bounty-token"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "5. Tokenomics",
+      "items": [
+        "rewards-fee",
+        "privacy-token",
+        "token-allocation"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "6. Security Model",
+      "items": [
+        "technical-solution",
+        "user-privacy",
+        "challenge"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "7. Governance & Legal",
+      "items": [
+        "dao",
         "legal-and-cases",
-        'process',
-      ],
+        "safety",
+        "blacklist"
+      ]
     },
     {
-      type: 'category',
-      label: 'Technical Documentation',
-      items: [
-        'smart-contracts',
-        'secret-token',
-        'security',
-      ],
+      "type": "category",
+      "label": "8. Vision & Appendix",
+      "items": [
+        "future",
+        "dilemma",
+        "faq",
+        "statement"
+      ]
     },
     {
-      type: 'category',
-      label: 'Feature Details',
-      items: [
-        'truth-box',
-        'status-mechanism',
-        'create-process',
-        'roles-exchange',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Tokenomics',
-      items: [
-        'rewards-fee',
-        'token-allocation',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Future Plans',
-      items: [
-        'reward-market',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Governance & Compliance',
-      items: [
-        'dao',
-        'safety',
-        'blacklist',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Technical Outlook',
-      items: [
-        'industry-dilemma',
-        'innovative',
-        'enlightenment',
-        'challenge',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Future Vision & Appendix',
-      items: [
-        'future',
-        'faq',
-        'statement',
-        'thanks',
-      ],
-    },
-  ],
+      "type": "category",
+      "label": "9. Meaning",
+      "items": [
+        "industry-dilemma",
+        "commercial",
+        "innovative",
+        "enlightenment",
+        "thanks"
+      ]
+    }
+  ]
 };
 
 export default sidebars;
-

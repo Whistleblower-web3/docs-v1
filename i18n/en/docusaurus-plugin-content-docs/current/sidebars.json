@@ -3,78 +3,88 @@
     "intro",
     {
       "type": "category",
-      "label": "Introduction & Background",
+      "label": "1. Status Quo & Problem",
       "items": [
-        "overview",
         "pain-points",
-        "social-principle",
-        "legal-and-cases",
-        "process"
+        "social-principle"
       ]
     },
     {
       "type": "category",
-      "label": "Technical Documentation",
+      "label": "2. Solution & Product",
       "items": [
-        "smart-contracts",
-        "secret-token",
-        "security"
+        "product"
       ]
     },
     {
       "type": "category",
-      "label": "Feature Details",
+      "label": "3. Truth Box Market",
       "items": [
         "truth-box",
-        "status-mechanism",
-        "create-process",
-        "roles-exchange"
+        "truth-box-data",
+        "truth-box-status-mechanism",
+        "truth-box-market-process",
+        "truth-box-create",
+        "truth-box-exchange",
+        "truth-box-smart-contracts"
       ]
     },
     {
       "type": "category",
-      "label": "Tokenomics",
+      "label": "4. Bounty Market",
+      "items": [
+        "bounty-token"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "4. Tokenomics",
       "items": [
         "rewards-fee",
+        "privacy-token",
         "token-allocation"
+
       ]
     },
     {
       "type": "category",
-      "label": "Future Plans",
+      "label": "5. Security Model",
       "items": [
-        "reward-market"
+        "technical-solution",
+        "user-privacy",
+        "challenge"
       ]
     },
     {
       "type": "category",
-      "label": "Governance & Compliance",
+      "label": "6. Governance & Legal",
       "items": [
         "dao",
+        "legal-and-cases",
         "safety",
         "blacklist"
       ]
     },
     {
       "type": "category",
-      "label": "Technical Outlook",
+      "label": "7. Vision & Appendix",
       "items": [
-        "industry-dilemma",
-        "innovative",
-        "enlightenment",
-        "challenge"
+        "future",
+        "dilemma",
+        "faq",
+        "statement"
       ]
     },
     {
       "type": "category",
-      "label": "Future Vision & Appendix",
+      "label": "8. Meaning",
       "items": [
-        "future",
-        "faq",
-        "statement",
+        "industry-dilemma",
+        "commercial",
+        "innovative",
+        "enlightenment",
         "thanks"
       ]
     }
   ]
 }
-

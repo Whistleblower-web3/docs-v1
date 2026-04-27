@@ -22,5 +22,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+chat/
 resource/
 *vibCoding.md

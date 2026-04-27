@@ -105,9 +105,9 @@ const config: Config = {
         },
         {
           href: 'https://app.wikitruth.xyz',
-          label: 'Launch App',
+          label: 'Beta App',
           position: 'right',
-          className: 'button button--primary',
+          className: 'button button--primary text-black hover:text-black',
         },
       ],
     },
@@ -119,7 +119,7 @@ const config: Config = {
         //   items: [
         // {
         //   label: 'GitHub',
-        //   href: 'https://github.com/WikiTruth-crypto',
+        //   href: 'https://github.com/WikiTruth-web3',
         // },
         // {
         //   label: 'Email',
