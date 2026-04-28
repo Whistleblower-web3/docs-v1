@@ -12,14 +12,15 @@ description: Welcome to the Wiki Truth Documentation - Decentralized Whistleblow
 
 Through Wiki Truth, whistleblowers can transform **risky truths** into on-chain assets, monetize them through market circulation, and obtain economic returns, thereby inspiring more people to participate in actions of justice.
 
-Thanks to Web3 smart contract features and token economic models, Wiki Truth solves the problems of trust collapse, information opacity, leakage of whistleblower information, lack of security for whistleblowers, and lack of incentives that exist in traditional crime reporting channels.
-
 ## Core Products
 
 Wiki Truth includes two core markets:
 
-1. **Truth Box Market**: Buyers pay a ransom to delay the time the truth is made public.
-2. **Bounty Market**: Publish bounties to obtain intelligence clues.
+1. **Truth Box Market**: Once evidence is minted into a Truth Box and released into the market, its ability to be monetized depends on whether a successful transaction can be completed. If no transaction occurs, the evidence is made public; if a transaction is successful, it generates an infinitely growing **Delay Premium**. Since no one can afford this cost, the evidence will ultimately be made public anyway.
+2. **Bounty Market**: It transforms traditional offline bounty notices and informant systems into a decentralized intelligence request pool characterized by transparent processes, anonymity, and privacy, operating on a trustless model. In terms of architectural design, it adopts a more flexible and practical **one-pool-to-many-submissions** model, where the final reward distribution is determined by the poster, who **decides the allocation ratio based on the actual contribution value of each contributor**.
+
+Leveraging the capabilities of Web3 smart contracts and token-based economic models, Wiki Truth is dedicated to addressing issues such as a breakdown of trust, lack of transparency, leakage of whistleblower information, lack of safety guarantees for whistleblowers, and a lack of incentives that plague traditional crime reporting channels.
+
 
 ## Quick Start
 

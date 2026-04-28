@@ -25,3 +25,4 @@ pnpm-debug.log*
 chat/
 resource/
 *vibCoding.md
+build/
