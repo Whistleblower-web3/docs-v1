@@ -21,16 +21,16 @@ sidebar:
 
 #### 网络与合约部署（主网/测试网）
 
-- **WTRC**: wikitruth项目的代币
-- **WTRC.Privacy**: WTRC的`ERC20privacy`代币。
+- **EMC**: Evidence Market项目的代币
+- **EMC.Privacy**: EMC的`ERC20privacy`代币。
 - **wROSE.Privacy**: wROSE的`ERC20privacy`代币。
 
 | 项目          | 主网           | 测试网                                     |
 | ------------- | -------------- | ------------------------------------------ |
 | 网络名称      | Oasis Sapphire | Oasis Sapphire Testnet                     |
 | Chain ID      | 23294          | 23295                                      |
-| WTRC          | 待填           | 0x990DE401CD0103a0107D27F82283db60F4844203 |
-| WTRC.Privacy  | 待填           | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
+| EMC           | 待填           | 0x990DE401CD0103a0107D27F82283db60F4844203 |
+| EMC.Privacy   | 待填           | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
 | wROSE.Privacy | 待填           | 0x4e30337908E19917f3F74adB45966114A55205c2 |
 
 #### EIP-712 关键结构示例

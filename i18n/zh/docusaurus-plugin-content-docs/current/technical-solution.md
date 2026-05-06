@@ -1,13 +1,13 @@
 ---
 title: 技术解决方案
-description: Wiki Truth 基于 Oasis Sapphire 隐私公链，构建去中心化吹哨人激励和犯罪证据市场。
+description: Evidence Market 基于 Oasis Sapphire 隐私公链，构建去中心化吹哨人激励和犯罪证据市场。
 sidebar:
   order: 3
 ---
 
 ## 技术解决方案
 
-### 我们如何构建Wiki Truth
+### 我们如何构建Evidence Market
 
 ### 1. 代码即法律 (Code is Law)
 

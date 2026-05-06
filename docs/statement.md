@@ -7,7 +7,7 @@ sidebar:
 
 ### Important Statement
 
-Before using the WikiTruth platform or reading this white paper and related documents, please carefully read and understand the following statements. This document is for informational purposes only and does not constitute any form of offer, solicitation, or advice.
+Before using the Evidence Market platform or reading this white paper and related documents, please carefully read and understand the following statements. This document is for informational purposes only and does not constitute any form of offer, solicitation, or advice.
 
 #### 1. Not Investment Advice
 
@@ -15,11 +15,11 @@ All information contained in this document (including but not limited to project
 
 #### 2. Not Legal or Tax Advice
 
-This document does not constitute legal, tax, or other professional advice. Laws and regulations in the blockchain and cryptocurrency fields are complex and changing, and vary by jurisdiction. You should seek professional advice from independent legal and tax advisors to understand the applicability, legality, and tax implications of the WikiTruth platform or WTRC tokens to your personal situation.
+This document does not constitute legal, tax, or other professional advice. Laws and regulations in the blockchain and cryptocurrency fields are complex and changing, and vary by jurisdiction. You should seek professional advice from independent legal and tax advisors to understand the applicability, legality, and tax implications of the Evidence Market platform or EMC tokens to your personal situation.
 
 #### 3. Technical Risks
 
-The WikiTruth platform is built on complex Web3 and privacy computing technologies, including smart contracts, decentralized storage (IPFS/Arweave), Trusted Execution Environments (TEE), etc. Although the team will try its best to ensure code security, all software systems may have unknown vulnerabilities or errors. Technical risks include:
+The Evidence Market platform is built on complex Web3 and privacy computing technologies, including smart contracts, decentralized storage (IPFS/Arweave), Trusted Execution Environments (TEE), etc. Although the team will try its best to ensure code security, all software systems may have unknown vulnerabilities or errors. Technical risks include:
 
 - **Smart Contract Vulnerabilities**: May lead to fund loss or system failure.
 - **Cyber Attacks**: Including but not limited to DDoS attacks, supply chain attacks, or attacks against underlying blockchain networks.
@@ -28,11 +28,11 @@ The WikiTruth platform is built on complex Web3 and privacy computing technologi
 
 #### 4. Regulatory Risks
 
-Cryptocurrency and blockchain technology face uncertain regulatory environments globally. New laws and regulations may appear in the future, or interpretations of existing regulations may change, which could have a significant adverse impact on the operation of the WikiTruth project, the value of WTRC tokens, or user participation. WikiTruth may not be able to operate legally in all jurisdictions, and users are responsible for complying with local laws and regulations.
+Cryptocurrency and blockchain technology face uncertain regulatory environments globally. New laws and regulations may appear in the future, or interpretations of existing regulations may change, which could have a significant adverse impact on the operation of the Evidence Market project, the value of EMC tokens, or user participation. Evidence Market may not be able to operate legally in all jurisdictions, and users are responsible for complying with local laws and regulations.
 
 #### 5. Market Risks
 
-WTRC token prices may be extremely volatile, influenced by various factors such as market sentiment, liquidity, technological development, macroeconomic conditions, and regulatory changes. The value of evidence on the WikiTruth platform and the level of delayed disclosure premiums are also affected by market supply and demand dynamics and may not achieve expected results.
+EMC token prices may be extremely volatile, influenced by various factors such as market sentiment, liquidity, technological development, macroeconomic conditions, and regulatory changes. The value of evidence on the Evidence Market platform and the level of delayed disclosure premiums are also affected by market supply and demand dynamics and may not achieve expected results.
 
 #### 6. Accuracy of Information
 
@@ -40,6 +40,6 @@ The information in this document is based on currently available data and the te
 
 #### 7. User Responsibility
 
-You are fully responsible for all your actions on the WikiTruth platform, including but not limited to complying with relevant laws and regulations, protecting private keys, evaluating counterparty risks, and understanding the consequences of participating in economic games. WikiTruth is not responsible for any losses caused by your failure to fulfill these responsibilities.
+You are fully responsible for all your actions on the Evidence Market platform, including but not limited to complying with relevant laws and regulations, protecting private keys, evaluating counterparty risks, and understanding the consequences of participating in economic games. Evidence Market is not responsible for any losses caused by your failure to fulfill these responsibilities.
 
-**By accessing, reading, or using any related information or products of WikiTruth, you signify that you have understood and agreed to all the above terms and conditions.**
+**By accessing, reading, or using any related information or products of Evidence Market, you signify that you have understood and agreed to all the above terms and conditions.**

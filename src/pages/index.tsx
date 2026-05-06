@@ -8,16 +8,16 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title="Wiki Truth Docs"
-      description="Decentralized whistleblower incentive and criminal evidence market">
+      title="EvidenceMarket Docs"
+      description="A decentralized intelligence marketplace that transforms “evidence of criminal activity">
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8">
-          <img src={logoSrc} alt="WikiTruth Logo" width={120} height={120} className="mx-auto mb-6" />
+          <img src={logoSrc} alt="EvidenceMarket Logo" width={120} height={120} className="mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-            Wiki Truth Docs
+            EvidenceMarket Docs
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8">
-            Decentralized whistleblower incentive and criminal evidence market
+          A decentralized intelligence marketplace that transforms “evidence of criminal activity
           </p>
         </div>
 
@@ -44,13 +44,13 @@ export default function Home(): JSX.Element {
               <p className="text-white/70 text-sm">Understanding the core concepts and features of Wiki Truth</p>
             </Link>
             <Link
-              to="/docs/truth-box-smart-contracts"
+              to="/docs/evidence-box-smart-contracts"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">Technical Documentation</h3>
               <p className="text-white/70 text-sm">Smart contract architecture and implementation</p>
             </Link>
             <Link
-              to="/docs/truth-box"
+              to="/docs/evidence-box"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">Function Details</h3>
               <p className="text-white/70 text-sm">Truth box, status mechanism, etc.</p>

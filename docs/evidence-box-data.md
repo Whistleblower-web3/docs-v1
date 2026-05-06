@@ -1,11 +1,11 @@
-﻿---
-title: 真相盒子数据（Truth Box Data）
-description: Truth Box 的数据结构。
+---
+title: Evidence Box Data
+description: The data structure of Evidence Box.
 sidebar:
   order: 8
 ---
 
-## 链上数据结构
+## On-Chain Data Structure
 
 ```solidity
 enum Status {Storing, Selling, Auctioning, Paid, Refunding, Delaying, Published, Blacklisted}
@@ -26,24 +26,24 @@ mapping(uint256 boxId => BasicData) internal _basicData;
 mapping(uint256 boxId => SecretData) internal _secretData;
 ```
 
-- **PublicData**：当前状态、价格与过期时间，用于交易撮合，访问权限控制。
-- **SecretData**：由 Sapphire TEE 加密的机密字段，包含创建者ID、加密后的机密数据（通常是密钥）与随机数。
+- **PublicData**: Current status, price, and expiration time, used for transaction matching and access permission control.
+- **SecretData**: Confidential fields encrypted by Sapphire TEE, containing the creator ID, encrypted confidential data (usually a key), and a nonce.
 
-> minterId并不是address，而是通过UserManager合约生成的随机bytes32类型的数据，和address很像，但它和真实的address没有任何关系，这么做是为了保证吹哨人的原始地址在链上不被关联，从而保证隐私性。
+> The minterId is not an address, but a random bytes32 type data generated through the UserManager contract. It looks like an address, but it has no relationship with the real address. This is done to ensure that the whistleblower's original address is not associated on the chain, thereby guaranteeing privacy.
 
 ## metadata-Box
 
-Truth Box 的元数据文件存储在IPFS上，其cid并不会直接存储在合约中，而是通过合约事件触发，记录在链上。
+The metadata file of the Evidence Box is stored on IPFS. Its CID is not directly stored in the contract, but is recorded on-chain triggered by contract events.
 
 ```solidity
 emit BoxCreated(boxId, userId, boxInfoCID_);
 ```
 
-Truth Box 的有两种创建方法：`create`和`createAndPublish`。
+There are two methods to create a Evidence Box: `create` and `createAndPublish`.
 
 ### create
 
-创建一个可以出售的Truth Box，创建后的Status为`Storing`，只有create需要对数据进行加密处理，元数据中包含加密后的数据。
+Creates a sellable Evidence Box with the initial Status of `Storing`. Only `create` requires data encryption processing, and the metadata contains the encrypted data.
 
 ```json
 {
@@ -73,7 +73,7 @@ Truth Box 的有两种创建方法：`create`和`createAndPublish`。
 
 ### createAndPublish
 
-创建一个直接公开的Truth Box，Status为`Published`，不需要加密，也不包含对称加密后的数据，而是直接存储直接访问的证据文件CID。
+Creates a directly public Evidence Box with the Status of `Published`. It does not require encryption and does not contain symmetrically encrypted data. Instead, it directly stores the CIDs of the evidence files for direct access.
 
 ```json
 {

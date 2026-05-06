@@ -25,6 +25,6 @@ The addition and removal of the blacklist are completely decided by the DAO comm
 8. **Malware Prohibition**: Must not disseminate malware, viruses, or content endangering network security and their links.
 9. **Harassment and Discrimination Prohibition**: Must not contain harassment, offensive, or discriminatory content.
 10. **Fraud Prohibition**: Must not involve any form of fraud, misleading information, or malicious spamming.
-11. **Spam Restriction**: Prohibition of repeated posting of completed Truth Boxes or advertising information.
+11. **Spam Restriction**: Prohibition of repeated posting of completed Evidence Boxes or advertising information.
 12. **Inappropriate Content Prohibition**: Prohibition of minors-related, explicit, obscene, or threatening language and images.
 13. **Violation Handling**: Violation of any of the above terms will trigger the DAO blacklist and refund/destruction mechanism.

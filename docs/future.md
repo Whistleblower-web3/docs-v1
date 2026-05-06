@@ -7,7 +7,7 @@ sidebar:
 
 ### Future Outlook
 
-Wiki Truth's vision is to build a Web3 on-chain crime and truth-exposing platform based on privacy encryption technology: Technology is responsible for being "verifiable", the economic model is responsible for being "sustainable", and the community is responsible for being "governable", making the defense of justice no longer a lonely fight for a few.
+Evidence Market's vision is to build a Web3 on-chain crime and truth-exposing platform based on privacy encryption technology: Technology is responsible for being "verifiable", the economic model is responsible for being "sustainable", and the community is responsible for being "governable", making the defense of justice no longer a lonely fight for a few.
 
 #### Technology Development Direction
 
@@ -22,7 +22,7 @@ Wiki Truth's vision is to build a Web3 on-chain crime and truth-exposing platfor
 
 #### Ecosystem Vision
 
-In the future, WikiTruth will cover the full-chain services of evidence collection, verification, trading, disclosure, and legal aid. It will also cooperate with global legal institutions, media organizations, and public welfare groups to enhance the accessibility and executability of the truth.
+In the future, Evidence Market will cover the full-chain services of evidence collection, verification, trading, disclosure, and legal aid. It will also cooperate with global legal institutions, media organizations, and public welfare groups to enhance the accessibility and executability of the truth.
 
 #### Milestones and Delivery Plan
 

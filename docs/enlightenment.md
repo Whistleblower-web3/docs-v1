@@ -32,14 +32,14 @@ The emergence of Web3 and blockchain technology is not just an innovation of fin
 When we write rules into smart contracts and store evidence in immutable blocks, we are experiencing a paradigm shift:
 
 - **Decentralization**: We no longer need omniscient "middlemen" to maintain order. When power is dispersed among every node in the network, single-point corruption cannot shake overall justice.
-- **Code Enforcement**: In the world of WikiTruth, if confidentiality fees are not paid, the truth will automatically be published. This requires no judge's ruling, no running around by an execution bureau, and is unaffected by bribery. This is **the code execution result set by the system**, not an accident of human will.
+- **Code Enforcement**: In the world of Evidence Market, if confidentiality fees are not paid, the truth will automatically be published. This requires no judge's ruling, no running around by an execution bureau, and is unaffected by bribery. This is **the code execution result set by the system**, not an accident of human will.
 - **Permissionless Verification**: You don't need to "trust" me; you only need to verify the code. Trust shifts from emotional "belief" to rational "computation."
 
 This does not mean a world without morality is needed, but rather offloading the burden of morality from the fragile shoulders of human nature. Through technological means, it makes **"honesty" the optimal game-theoretic strategy in the system.**
 
 ### 3. Questions to a Chaotic World
 
-Standing at the crossroads of Web3, Wiki Truth wants to ask the world a few questions:
+Standing at the crossroads of Web3, Evidence Market wants to ask the world a few questions:
 
 > If the truth is no longer a malleable entity to be dressed up at will, but a hard, indelible cryptographic bedrock, how will those accustomed to manipulating power in the dark adapt to the light?
 

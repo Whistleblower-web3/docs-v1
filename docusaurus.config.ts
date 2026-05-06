@@ -3,14 +3,14 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'WikiTruth Docs',
+  title: 'EvidenceMarket Docs',
   tagline: 'Decentralized whistleblower incentive and criminal evidence market',
   favicon: '/logo/logo-black.svg',
 
-  url: 'https://docs.wikitruth.xyz',
+  url: 'https://docs.EvidenceMarket.xyz',
   baseUrl: '/',
-  organizationName: 'wikitruth',
-  projectName: 'wikitruth-docs',
+  organizationName: 'EvidenceMarket',
+  projectName: 'EvidenceMarket-docs',
 
   onBrokenLinks: 'warn',
   markdown: {
@@ -63,9 +63,9 @@ const config: Config = {
     // use the default Navbar and Footer, but configure the styles and content
     // note: the custom components are kept in src/theme/Navbar/index.custom.tsx and src/theme/Footer/index.custom.tsx
     navbar: {
-      title: 'Wiki Truth',
+      title: 'Evidence Market',
       logo: {
-        alt: 'WikiTruth Logo',
+        alt: 'EvidenceMarket Logo',
         src: '/logo/logo.svg',
         srcDark: '/logo/logo.svg',
         width: 36,
@@ -79,17 +79,17 @@ const config: Config = {
           position: 'left',
         },
         // {
-        //   href: 'https://wikitruth.xyz/roadmap',
+        //   href: 'https://EvidenceMarket.xyz/roadmap',
         //   label: 'Roadmap',
         //   position: 'left',
         // },
         // {
-        //   href: 'https://wikitruth.xyz/blog',
+        //   href: 'https://EvidenceMarket.xyz/blog',
         //   label: 'Blog',
         //   position: 'left',
         // },
         // {
-        //   href: 'https://wikitruth.xyz/team',
+        //   href: 'https://EvidenceMarket.xyz/team',
         //   label: 'Team',
         //   position: 'left',
         // },
@@ -119,11 +119,11 @@ const config: Config = {
         //   items: [
         // {
         //   label: 'GitHub',
-        //   href: 'https://github.com/WikiTruth-web3',
+        //   href: 'https://github.com/EvidenceMarket-web3',
         // },
         // {
         //   label: 'Email',
-        //   href: 'mailto:wikitruth@proton.me',
+        //   href: 'mailto:EvidenceMarket@proton.me',
         // },
         //   ],
         // },
@@ -137,7 +137,7 @@ const config: Config = {
         //   ],
         // },
       ],
-      copyright: `© ${new Date().getFullYear()} WikiTruth. All rights reserved.`,
+      copyright: `© ${new Date().getFullYear()} EvidenceMarket. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

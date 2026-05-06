@@ -1,13 +1,13 @@
 ---
 title: Technical Solutions
-description: Wiki Truth builds a decentralized whistleblower incentive and criminal evidence market based on the Oasis Sapphire privacy public chain.
+description: Evidence Market builds a decentralized whistleblower incentive and criminal evidence market based on the Oasis Sapphire privacy public chain.
 sidebar:
   order: 3
 ---
 
 ## Technical Solutions
 
-### How We Build Wiki Truth
+### How We Build Evidence Market
 
 ### 1. Code is Law
 

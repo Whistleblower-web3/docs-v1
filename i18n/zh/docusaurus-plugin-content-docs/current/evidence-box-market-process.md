@@ -1,6 +1,6 @@
 ---
 title: 运行流程 (Process Flow)
-description: 从上传证据到最终公开，Truth Box Market 系统的端到端真实使用场景解析。
+description: 从上传证据到最终公开，Evidence Box Market 系统的端到端真实使用场景解析。
 sidebar:
   order: 4
 ---
@@ -16,7 +16,7 @@ sidebar:
 ### 1. 真相资产化 (Assetization)
 
 - **上传**：上传证据文件与元数据至 IPFS/Arweave。
-- **铸造**：在智能合约中铸造 **Truth Box**。
+- **铸造**：在智能合约中铸造 **Evidence Box**。
 
 ### 2. 市场流通 (Market Circulation)
 

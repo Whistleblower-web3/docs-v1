@@ -8,16 +8,16 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title="Wiki Truth 文档"
-      description="去中心化的吹哨人激励与犯罪证据市场">
+      title="EvidenceMarket 文档"
+      description="一个将“犯罪证据”转化为可交易资产的去中心化情报市场">
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8">
-          <img src={logoSrc} alt="WikiTruth Logo" width={120} height={120} className="mx-auto mb-6" />
+          <img src={logoSrc} alt="EvidenceMarket Logo" width={120} height={120} className="mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-            Wiki Truth 文档
+            Evidence Market 文档
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8">
-            去中心化的吹哨人激励与犯罪证据市场
+          一个将“犯罪证据”转化为可交易资产的去中心化情报市场
           </p>
         </div>
 
@@ -41,16 +41,16 @@ export default function Home(): JSX.Element {
               to="/docs/product"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">核心产品</h3>
-              <p className="text-white/70 text-sm">了解 Wiki Truth 的核心产品</p>
+              <p className="text-white/70 text-sm">了解我们的核心产品</p>
             </Link>
             <Link
-              to="/docs/truth-box-smart-contracts"
+              to="/docs/evidence-box-smart-contracts"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">技术文档</h3>
               <p className="text-white/70 text-sm">智能合约架构和技术实现</p>
             </Link>
             <Link
-              to="/docs/truth-box"
+              to="/docs/evidence-box"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">功能细节</h3>
               <p className="text-white/70 text-sm">真相盒子、状态机制等功能</p>

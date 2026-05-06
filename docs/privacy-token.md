@@ -21,17 +21,17 @@ After deploying the `ERC20privacy` contract, the `ERC20` token can be wrapped in
 
 #### Network and Contract Deployment (Mainnet/Testnet)
 
-- **WTRC**: The token of the wikitruth project.
-- **WTRC.Privacy**: The `ERC20privacy` token of WTRC.
+- **EMC**: The token of the Evidence Market project.
+- **EMC.Privacy**: The `ERC20privacy` token of EMC.
 - **wROSE.Privacy**: The `ERC20privacy` token of wROSE.
 
-| Project | Mainnet | Testnet |
-| --- | --- | --- |
-| Network Name | Oasis Sapphire | Oasis Sapphire Testnet |
-| Chain ID | 23294 | 23295 |
-| WTRC | TBD | 0x990DE401CD0103a0107D27F82283db60F4844203 |
-| WTRC.Privacy | TBD | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
-| wROSE.Privacy | TBD | 0x4e30337908E19917f3F74adB45966114A55205c2 |
+| Project       | Mainnet        | Testnet                                    |
+| ------------- | -------------- | ------------------------------------------ |
+| Network Name  | Oasis Sapphire | Oasis Sapphire Testnet                     |
+| Chain ID      | 23294          | 23295                                      |
+| EMC           | TBD            | 0x990DE401CD0103a0107D27F82283db60F4844203 |
+| EMC.Privacy   | TBD            | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
+| wROSE.Privacy | TBD            | 0x4e30337908E19917f3F74adB45966114A55205c2 |
 
 #### Example of EIP-712 Key Structure
 

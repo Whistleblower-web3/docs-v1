@@ -1,6 +1,6 @@
 ---
 title: Process Flow
-description: An end-to-end real-world use case analysis of the Truth Box Market system, from evidence upload to final publication.
+description: An end-to-end real-world use case analysis of the Evidence Box Market system, from evidence upload to final publication.
 sidebar:
   order: 4
 ---
@@ -13,10 +13,10 @@ In the operation of the protocol, there are three core roles involved: **Whistle
 
 ![Simple Process](/docs/symbol-process.svg)
 
-### 1. Truth Assetization
+### 1. Evidence Assetization
 
 - **Upload**: Upload evidence files and metadata to IPFS/Arweave.
-- **Mint**: Mint the **Truth Box** in the smart contract.
+- **Mint**: Mint the **Evidence Box** in the smart contract.
 
 ### 2. Market Circulation
 

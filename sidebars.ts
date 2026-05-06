@@ -26,13 +26,13 @@ const sidebars: SidebarsConfig = {
       "type": "category",
       "label": "3. Truth Box Market",
       "items": [
-        "truth-box",
-        "truth-box-data",
-        "truth-box-status-mechanism",
-        "truth-box-market-process",
-        "truth-box-create",
-        "truth-box-exchange",
-        "truth-box-smart-contracts"
+        "evidence-box",
+        "evidence-box-data",
+        "evidence-box-status-mechanism",
+        "evidence-box-market-process",
+        "evidence-box-create",
+        "evidence-box-exchange",
+        "evidence-box-smart-contracts"
       ]
     },
     {

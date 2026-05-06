@@ -1,21 +1,21 @@
 ﻿---
 title: 悬赏令 (Bounty Token)
-description: 深入解析 Wiki Truth 悬赏市场中的“一对多”情报收集与资金分配机制。
+description: 深入解析 Evidence Market 悬赏市场中的“一对多”情报收集与资金分配机制。
 sidebar:
   order: 1
 ---
 
 # 悬赏令 (Bounty Token)
 
-如果说 Truth Box 是“先有证据，后找买家”的被动盲盒，那么 **Bounty Token（悬赏令）** 则是“先有需求，后找线索”的主动情报网络。
+如果说 Evidence Box 是“先有证据，后找买家”的被动盲盒，那么 **Bounty Token（悬赏令）** 则是“先有需求，后找线索”的主动情报网络。
 
-在 Wiki Truth 的悬赏市场中，发布者可以通过铸造一个 Bounty Token，将一定数量的资金（如 `$WTRC`、`USDT` 等）锁定在智能合约中，面向全球暗网与知情人士公开征集特定的机密线索。
+在 Evidence Market 的悬赏市场中，发布者可以通过铸造一个 Bounty Token，将一定数量的资金（如 `EMC`、`USDT` 等）锁定在智能合约中，面向全球暗网与知情人士公开征集特定的机密线索。
 
 ---
 
 ## 1. 悬赏令的核心机制
 
-与传统的“一人独得”悬赏模式不同，Wiki Truth 的 Bounty Token 在架构设计上采用了更加灵活和现实的**“一池对多提交”**模式。
+与传统的“一人独得”悬赏模式不同，Evidence Market 的 Bounty Token 在架构设计上采用了更加灵活和现实的**“一池对多提交”**模式。
 
 ### 👥 1 对多提交结构 (One-to-Many Submissions)
 
@@ -60,4 +60,4 @@ sidebar:
 
 ### 总结
 
-WikiTruth 悬赏市场通过**“资金前置”**和**“隐私交付”**，为需求方与供给方之间架起了一座**无须信任（Trustless）的桥梁**。用现代密码学与博弈论的结合，在区块链上颠覆古代“悬赏”的模式。
+Evidence Market 悬赏市场通过**“资金前置”**和**“隐私交付”**，为需求方与供给方之间架起了一座**无须信任（Trustless）的桥梁**。用现代密码学与博弈论的结合，在区块链上颠覆古代“悬赏”的模式。

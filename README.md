@@ -1,10 +1,10 @@
-# WikiTruth Docs
+# EvidenceMarket Docs
 
-Static documentation site for the WikiTruth project, built with Docusaurus.
+Static documentation site for the EvidenceMarket project, built with Docusaurus.
 
 ## Project Overview
 
-WikiTruth is a privacy evidence market project based on Oasis Sapphire. This documentation site is built with Docusaurus 3.x, providing a complete technical documentation display and access experience.
+EvidenceMarket is a privacy evidence market project based on Oasis Sapphire. This documentation site is built with Docusaurus 3.x, providing a complete technical documentation display and access experience.
 
 ## Tech Stack
 
@@ -144,10 +144,9 @@ After building, deploy the contents of the `build/` directory to a static websit
 
 ## Related Links
 
-- **Main Site**: https://wikitruth.xyz
-- **App**: https://app.wikitruth.xyz
-- **App on ipfs**: https://app.wikitruth.eth.limo
-- **Documentation Site**: https://docs.wikitruth.xyz
+- **Main Site**: https://evidencemarket.xyz
+- **App**: https://app.evidencemarket.xyz
+- **Documentation Site**: https://docs.evidencemarket.xyz
 
 ## License
 

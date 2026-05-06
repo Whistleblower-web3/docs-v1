@@ -1,5 +1,5 @@
 ---
-title: Truth Box 交易机制与角色
+title: Evidence Box 交易机制与角色
 description: 了解生态中的关键参与者、权限体系与交易生命周期。
 sidebar:
   order: 11
@@ -7,13 +7,13 @@ sidebar:
 
 # 交易机制与角色
 
-Truth Box Market 的生态系统依赖于多方角色的协作博弈。为了确保系统的去中心化与抗审查性，我们设计了精细的权限分离与激励机制。
+Evidence Box Market 的生态系统依赖于多方角色的协作博弈。为了确保系统的去中心化与抗审查性，我们设计了精细的权限分离与激励机制。
 
 ## 1. 生态关键角色 (Roles)
 
-- **Minter**：Truth Box 创建者，即吹哨者。
+- **Minter**：Evidence Box 创建者，即吹哨者。
 - **Seller**：代理出售Box的其它用户。
-- **Buyer**：支付购买/竞拍 Truth Box的用户。
+- **Buyer**：支付购买/竞拍 Evidence Box的用户。
 - **Bidder**: 参与竞拍但是失败的用户。
 - **Completer**：代理执行完成订单的其它用户（非Buyer和Minter）。
 - **DAO**：治理与参数调整、黑名单处理、交易争议裁决的最高权限实体。
@@ -45,7 +45,7 @@ Truth Box Market 的生态系统依赖于多方角色的协作博弈。为了确
 
 ## 3. 数据访问权限 (Privacy Access Control)
 
-> 这里再次说明：Truth Box 交易的是访问权限，而不是像NFT那样会交易Box本身。
+> 这里再次说明：Evidence Box 交易的是访问权限，而不是像NFT那样会交易Box本身。
 
 | 资产状态 (Status)             | 有权查看者 (Access Granted) | 说明                                               |
 | :---------------------------- | :-------------------------- | :------------------------------------------------- |

@@ -1,21 +1,21 @@
 ---
 title: Reality & Legal Basis
-description: Exploring the realistic demand basis and legal compliance framework of WikiTruth, and its feasibility under the US judicial system.
+description: Exploring the realistic demand basis and legal compliance framework of Evidence Market, and its feasibility under the US judicial system.
 sidebar:
   order: 4
 ---
 
 # Reality & Legal Basis
 
-WikiTruth is not built outside the law, but is a digital extension of traditional judicial procedures in the Web3 era. Our core logic is derived from mature legal frameworks (such as the SEC and CFTC Whistleblower Programs).
+Evidence Market is not built outside the law, but is a digital extension of traditional judicial procedures in the Web3 era. Our core logic is derived from mature legal frameworks (such as the SEC and CFTC Whistleblower Programs).
 
 ## 1. Legal Basis: The Compliance Digital Cornerstone
 
-WikiTruth's design is deeply inspired by the **US Securities and Exchange Commission (SEC) Whistleblower Program** and upgrades its practical logic in a decentralized manner. We position ourselves as **"Decentralized RegTech Infrastructure"**.
+Evidence Market's design is deeply inspired by the **US Securities and Exchange Commission (SEC) Whistleblower Program** and upgrades its practical logic in a decentralized manner. We position ourselves as **"Decentralized RegTech Infrastructure"**.
 
 ### Core Legal Pillars
 
-WikiTruth's operating model finds a solid jurisprudential basis in the following key legal provisions:
+Evidence Market's operating model finds a solid jurisprudential basis in the following key legal provisions:
 
 #### A. Core Authorization Act (Dodd-Frank Act Section 922)
 
@@ -29,7 +29,7 @@ We digitize this "reward promise" into the automatic execution logic of on-chain
 > _Economic Model: Clarified the proportion of value return._
 
 Title 15 U.S.C. § 78u-6 requires the SEC to pay awards to eligible whistleblowers ranging from **10% to 30%** of the total monetary sanctions collected.
-This provides a real-world value anchor for our token economic model. WikiTruth realizes this potential "future claim" in advance through market games, solving the problem of long return cycles (several years) in traditional channels.
+This provides a real-world value anchor for our token economic model. Evidence Market realizes this potential "future claim" in advance through market games, solving the problem of long return cycles (several years) in traditional channels.
 
 #### C. Privacy Protection (15 U.S.C. § 78u-6(h)(2)(A))
 
@@ -49,12 +49,12 @@ We assign this role to **smart contracts** and the **decentralized network**. Us
 
 ## 2. Living Space under the Judicial Framework
 
-WikiTruth is not a tool to challenge the law, but a **Web3 Digital Upgrade (RegTech)** of judicial procedures.
+Evidence Market is not a tool to challenge the law, but a **Web3 Digital Upgrade (RegTech)** of judicial procedures.
 
-In the US and major judicial jurisdictions globally, WikiTruth has broad space for survival and development:
+In the US and major judicial jurisdictions globally, Evidence Market has broad space for survival and development:
 
-1. **Crowdsourced Enforcement**: Regulatory agencies have limited manpower. As a technical crowdsourcing platform, WikiTruth can effectively screen high-value leads and reduce enforcement costs.
-2. **Evolution of Evidence**: With the increasing recognition of blockchain deposition (hashes, timestamps) by the judicial system, on-chain evidence provided by WikiTruth will have extremely high legal validity.
-3. **First Amendment Protection**: As a technical tool protecting anonymous expression and revealing the truth, WikiTruth's core spirit aligns with the First Amendment's protection of freedom of speech.
+1. **Crowdsourced Enforcement**: Regulatory agencies have limited manpower. As a technical crowdsourcing platform, Evidence Market can effectively screen high-value leads and reduce enforcement costs.
+2. **Evolution of Evidence**: With the increasing recognition of blockchain deposition (hashes, timestamps) by the judicial system, on-chain evidence provided by Evidence Market will have extremely high legal validity.
+3. **First Amendment Protection**: As a technical tool protecting anonymous expression and revealing the truth, Evidence Market's core spirit aligns with the First Amendment's protection of freedom of speech.
 
-> **Summary**: WikiTruth is a secure bridge connecting "off-chain facts" and "on-chain evidence", and is the **"Justice Oracle"** of the digital age.
+> **Summary**: Evidence Market is a secure bridge connecting "off-chain facts" and "on-chain evidence", and is the **"Justice Oracle"** of the digital age.

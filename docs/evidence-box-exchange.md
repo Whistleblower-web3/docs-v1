@@ -1,5 +1,5 @@
 ---
-title: Truth Box Trading Mechanism & Roles
+title: Evidence Box Trading Mechanism & Roles
 description: Understand the key participants, permission systems, and transaction lifecycle within the ecosystem.
 sidebar:
   order: 11
@@ -7,13 +7,13 @@ sidebar:
 
 # Trading Mechanism & Roles
 
-Truth Box Market ecosystem relies on the collaborative game theory of multiple roles. To ensure the system's decentralization and censorship resistance, we have designed a refined permission separation and incentive mechanism.
+Evidence Box Market ecosystem relies on the collaborative game theory of multiple roles. To ensure the system's decentralization and censorship resistance, we have designed a refined permission separation and incentive mechanism.
 
 ## 1. Key Ecosystem Roles
 
-- **Minter**: Truth Box creator, i.e., the whistleblower.
+- **Minter**: Evidence Box creator, i.e., the whistleblower.
 - **Seller**: Other users acting as agents to sell the Box.
-- **Buyer**: The user who pays to purchase/auction the Truth Box.
+- **Buyer**: The user who pays to purchase/auction the Evidence Box.
 - **Bidder**: The user who participates in an auction but fails.
 - **Completer**: Other users (non-Buyer and non-Minter) acting as agents to execute order completion.
 - **DAO**: The highest authority entity for governance, parameter adjustment, blacklist processing, and transaction dispute arbitration.
@@ -45,7 +45,7 @@ The smart contract strictly restricts the operational permissions of each role t
 
 ## 3. Data Access Control (Privacy Access Control)
 
-> Reiteration: The Truth Box trades access permissions, not the Box itself like an NFT.
+> Reiteration: The Evidence Box trades access permissions, not the Box itself like an NFT.
 
 | Asset Status           | Access Granted | Description                                                                                                   |
 | :--------------------- | :------------- | :------------------------------------------------------------------------------------------------------------ |
@@ -54,4 +54,4 @@ The smart contract strictly restricts the operational permissions of each role t
 | **Paid**               | **Buyer**      | Buyer gains access to verify authenticity.                                                                    |
 | **Refunding**          | **Everyone**   | Requires specific authorized parties to intervene in arbitration (Note: Depends on DAO governance mechanism). |
 | **Delaying**           | **Buyer**      | Buyer pays for exclusive access permissions.                                                                  |
-| **Published**          | **Everyone**   | Truth enters public domain, anyone can decrypt.                                                               |
+| **Published**          | **Everyone**   | Evidence enters public domain, anyone can decrypt.                                                               |

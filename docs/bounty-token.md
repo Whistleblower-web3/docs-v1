@@ -1,21 +1,21 @@
 ---
 title: Bounty Token
-description: In-depth analysis of the "one-to-many" intelligence gathering and fund distribution mechanism in the Wiki Truth bounty market.
+description: In-depth analysis of the "one-to-many" intelligence gathering and fund distribution mechanism in the Evidence Market bounty market.
 sidebar:
   order: 1
 ---
 
 # Bounty Token
 
-If the Truth Box is a passive blind box of "evidence first, buyer later", then the **Bounty Token** is an active intelligence network of "demand first, clues later".
+If the Evidence Box is a passive blind box of "evidence first, buyer later", then the **Bounty Token** is an active intelligence network of "demand first, clues later".
 
-In the Wiki Truth bounty market, a publisher can mint a Bounty Token, locking a certain amount of funds (such as `$WTRC`, `USDT`, etc.) in a smart contract to publicly solicit specific confidential clues from the global dark web and insiders.
+In the Evidence Market bounty market, a publisher can mint a Bounty Token, locking a certain amount of funds (such as `EMC`, `USDT`, etc.) in a smart contract to publicly solicit specific confidential clues from the global dark web and insiders.
 
 ---
 
 ## 1. Core Mechanism of Bounty Token
 
-Unlike the traditional "winner-takes-all" bounty model, Wiki Truth's Bounty Token adopts a more flexible and realistic **"one-pool-to-many-submissions"** model in its architectural design.
+Unlike the traditional "winner-takes-all" bounty model, Evidence Market's Bounty Token adopts a more flexible and realistic **"one-pool-to-many-submissions"** model in its architectural design.
 
 ### 👥 1-to-Many Submission Structure (One-to-Many Submissions)
 
@@ -60,4 +60,4 @@ In a decentralized world, giving the publisher the right to distribute funds mig
 
 ### Summary
 
-The WikiTruth Bounty Market builds a **Trustless bridge** between the demand side and the supply side through **"front-loaded funds"** and **"privacy delivery"**. By combining modern cryptography and game theory, it subverts the ancient model of "bounty" on the blockchain.
+The Evidence Market Bounty Market builds a **Trustless bridge** between the demand side and the supply side through **"front-loaded funds"** and **"privacy delivery"**. By combining modern cryptography and game theory, it subverts the ancient model of "bounty" on the blockchain.
