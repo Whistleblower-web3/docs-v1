@@ -5,8 +5,6 @@ sidebar:
   order: 3
 ---
 
-# 核心产品介绍
-
 Evidence Market 是一个由两套逻辑互补的市场组成的**双引擎情报网络**。
 
 为了适应不同场景下的信息流转需求，平台构建了两个独立的子产品板块：**Evidence Box Market (证据盒子市场)** 与 **Bounty Market (悬赏市场)**。

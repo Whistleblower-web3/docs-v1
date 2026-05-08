@@ -5,21 +5,18 @@ sidebar:
   order: 6
 ---
 
-### 隐私代币
-
-项目使用基于 Oasis Sapphire 隐私库开发了一个通用的`ERC20privacy`合约，实现余额加密与隐私转账, 并提供基于 **EIP-712** 的签名授权接口，实现在链上不留痕迹的情况下完成代币交易。
+为了实现隐私转账功能，本项目开发了基于 Oasis Sapphire 隐私库的通用`ERC20privacy`合约。该合约允许代币余额在链上以加密形式存储，并通过 EIP-712 签名授权机制，在不暴露敏感交易细节的前提下完成代币转移。
 
 - **余额隐私**：合约内部加密存储余额，普通查询仅返回本人可见数据。
 - **签名授权**：支持基于 EIP-712 的 VIEW / TRANSFER / APPROVE 许可，避免在链上暴露敏感授权细节。
 - **无事件日志**：不记录事件日志，避免在链上留下代币交易痕迹。
 - **防重放**：签名唯一性校验与过期时间限制，防止重复使用。
-- **Wrap/Unwrap**：与基础 ERC20 之间可包装/解包，兼容外部流动性， 原生代币如sapphire testnet（TEST），可以直接使用deposit/withdraw接口。
-
-部署`ERC20privacy`合约后，通过`wrap`和`unwrap`接口，将`ERC20`代币包装成`ERC20privacy`代币，即可实现隐私代币的铸造。
+- **Wrap/Unwrap**：与基础 ERC20 之间可包装/解包，兼容外部流动性，
+- **Deposit/Withdraw**：原生代币如sapphire testnet（TEST），可以直接使用该接口。
 
 > 注意：每个ERC20privacy代币只能对应一个ERC20代币。
 
-#### 网络与合约部署（主网/测试网）
+### 网络与合约部署（主网/测试网）
 
 - **EMC**: Evidence Market项目的代币
 - **EMC.Privacy**: EMC的`ERC20privacy`代币。
@@ -33,7 +30,7 @@ sidebar:
 | EMC.Privacy   | 待填           | 0x449e2CD61F0328Ae68f4A530170C892B45b4B269 |
 | wROSE.Privacy | 待填           | 0x4e30337908E19917f3F74adB45966114A55205c2 |
 
-#### EIP-712 关键结构示例
+### EIP-712 关键结构示例
 
 ```solidity
 // EIP-712 domain parameters

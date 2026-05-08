@@ -5,8 +5,6 @@ sidebar:
   order: 1
 ---
 
-# 悬赏令 (Bounty Token)
-
 如果说 Evidence Box 是“先有证据，后找买家”的被动盲盒，那么 **Bounty Token（悬赏令）** 则是“先有需求，后找线索”的主动情报网络。
 
 在 Evidence Market 的悬赏市场中，发布者可以通过铸造一个 Bounty Token，将一定数量的资金（如 `EMC`、`USDT` 等）锁定在智能合约中，面向全球暗网与知情人士公开征集特定的机密线索。

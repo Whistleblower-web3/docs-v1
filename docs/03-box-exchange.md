@@ -5,7 +5,7 @@ sidebar:
   order: 11
 ---
 
-# Trading Mechanism & Roles
+<!-- # Trading Mechanism & Roles -->
 
 Evidence Box Market ecosystem relies on the collaborative game theory of multiple roles. To ensure the system's decentralization and censorship resistance, we have designed a refined permission separation and incentive mechanism.
 
@@ -54,4 +54,4 @@ The smart contract strictly restricts the operational permissions of each role t
 | **Paid**               | **Buyer**      | Buyer gains access to verify authenticity.                                                                    |
 | **Refunding**          | **Everyone**   | Requires specific authorized parties to intervene in arbitration (Note: Depends on DAO governance mechanism). |
 | **Delaying**           | **Buyer**      | Buyer pays for exclusive access permissions.                                                                  |
-| **Published**          | **Everyone**   | Evidence enters public domain, anyone can decrypt.                                                               |
+| **Published**          | **Everyone**   | Evidence enters public domain, anyone can decrypt.                                                            |

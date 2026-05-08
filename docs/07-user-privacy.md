@@ -5,7 +5,7 @@ sidebar:
   order: 7
 ---
 
-## User Privacy Protection
+### User Privacy Protection
 
 - **Hidden Addresses**: Protocol interaction is based on mapping wallet addresses to `UserId`s. Wallet addresses will not be exposed in event logs, using `UserId` instead to reduce on-chain associativity.
 - **SIWE Permission Verification**: Reading important data requires a wallet signature SIWE token, and the contract does not provide address parameter access functions.

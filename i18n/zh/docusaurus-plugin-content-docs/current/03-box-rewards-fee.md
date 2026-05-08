@@ -1,11 +1,11 @@
 ---
-title: 赏金与博弈成本
-description: 了解 Evidence Market 的自动赏金分配机制与延迟披露溢价模型。
+title: Evidence Box 奖励与费用分配
+description: 了解 Evidence Box Market 的奖金分配机制。
 sidebar:
   order: 12
 ---
 
-## 赏金分配与博弈成本
+## Evidence Box 奖励分配
 
 Evidence Market 的经济模型旨在平衡**吹哨人激励**、**社区参与动力**与**平台可持续性**。所有的资金流转均由智能合约自动执行，确保透明、公正且不可篡改。
 

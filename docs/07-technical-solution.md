@@ -5,8 +5,6 @@ sidebar:
   order: 3
 ---
 
-## Technical Solutions
-
 ### How We Build Evidence Market
 
 ### 1. Code is Law

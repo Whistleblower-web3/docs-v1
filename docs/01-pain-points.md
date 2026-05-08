@@ -1,11 +1,11 @@
 ---
-title: Industry Status & Challenges
-description: Trust crisis, high compliance costs, fragile chain of custody—traditional truth verification faces multiple dilemmas.
+title: Project Background
+description: Centralized trust crisis, and the problem of weak evidence chains in crime reporting in real society.
 sidebar:
   order: 2
 ---
 
-### Industry Status
+### The Dilemma of Real-World Criminal Evidence
 
 > When the cost of maintaining the truth is higher than the cost of covering up lies, the trust system begins to crumble.
 

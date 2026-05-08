@@ -5,8 +5,6 @@ sidebar:
   order: 24
 ---
 
-### 重要声明
-
 在使用 Evidence Market 平台或阅读本白皮书及相关文档之前，请仔细阅读并理解以下声明。本文档旨在提供信息，不构成任何形式的要约、招揽或建议。
 
 #### 1. 非投资建议 (Not Investment Advice)

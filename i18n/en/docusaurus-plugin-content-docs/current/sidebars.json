@@ -26,6 +26,7 @@
         "03-box-market-process",
         "03-box-create",
         "03-box-exchange",
+        "03-box-rewards-fee",
         "03-box-smart-contracts"
       ]
     },
@@ -74,23 +75,23 @@
     },
     {
       "type": "category",
-      "label": "9. Vision & Appendix",
+      "label": "9. Appendix",
       "items": [
-        "09-future",
+        "09-future-plan",
         "09-dilemma",
-        "09-dilemma-tech",
         "09-faq",
         "09-faq-2",
-        "09-statement"
+        "09-faq-3"
       ]
     },
     {
       "type": "category",
-      "label": "10. Meaning",
+      "label": "10. Vision & Meaning",
       "items": [
         "10-commercial",
         "10-innovative",
         "10-enlightenment",
+        "10-statement",
         "thanks"
       ]
     }

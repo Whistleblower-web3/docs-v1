@@ -5,8 +5,6 @@ sidebar:
   order: 5
 ---
 
-### 智能合约架构
-
 Evidence Market 采用模块化智能合约，部署在 **Oasis Sapphire**（EVM 兼容隐私公链）。机密数据在链上以加密形式存储，并通过 SIWE 令牌校验权限。
 
 **核心模块**
@@ -25,11 +23,11 @@ Evidence Market 采用模块化智能合约，部署在 **Oasis Sapphire**（EVM
 | -------------- | -------------- | -------------------------------------------------------------------------------------- |
 | 网络名称       | Oasis Sapphire | Oasis Sapphire Testnet                                                                 |
 | Chain ID       | 23294          | 23295                                                                                  |
-| 区块浏览器     | 未部署          | [Oasis Sapphire Testnet explorer](https://explorer.oasis.io/testnet/sapphire/address/) |
-| AddressManager | 未部署           | 0x268863DAeaAdcB45aBb010402600Dea7C0a04744                                             |
-| EvidenceBox       | 未部署           | 0x8Db771373077225aEb5Af7DFCa9ba33185ba0dB3                                             |
-| Exchange       | 未部署           | 0x0499bd1974FF382A49D0008b413422518E71e06d                                             |
-| FundManager    | 未部署           | 0x154f826356776a75B748373aDD310a5BB449a268                                             |
-| UserManager    | 未部署           | 0xeeF1c5Fd9bf0dFc8fD47D57c56B2ec9f52811CB2                                             |
-| SiweAuth       | 未部署           | 0x6547F0a925BD522F029D0aFEC3A239aCDcE0122a                                             |
-| Forwarder      | 未部署           | 0x6553408789c9ca50FDCa0E3120245674F4C529ad                                             |
+| 区块浏览器     | 未部署         | [Oasis Sapphire Testnet explorer](https://explorer.oasis.io/testnet/sapphire/address/) |
+| AddressManager | 未部署         | 0x268863DAeaAdcB45aBb010402600Dea7C0a04744                                             |
+| EvidenceBox    | 未部署         | 0x8Db771373077225aEb5Af7DFCa9ba33185ba0dB3                                             |
+| Exchange       | 未部署         | 0x0499bd1974FF382A49D0008b413422518E71e06d                                             |
+| FundManager    | 未部署         | 0x154f826356776a75B748373aDD310a5BB449a268                                             |
+| UserManager    | 未部署         | 0xeeF1c5Fd9bf0dFc8fD47D57c56B2ec9f52811CB2                                             |
+| SiweAuth       | 未部署         | 0x6547F0a925BD522F029D0aFEC3A239aCDcE0122a                                             |
+| Forwarder      | 未部署         | 0x6553408789c9ca50FDCa0E3120245674F4C529ad                                             |

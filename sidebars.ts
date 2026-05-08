@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
         "box-market-process",
         "box-create",
         "box-exchange",
+        "box-rewards-fee",
         "box-smart-contracts"
       ]
     },
@@ -46,8 +47,8 @@ const sidebars: SidebarsConfig = {
       "type": "category",
       "label": "5. Tokenomics",
       "items": [
-        "rewards-fee",
-        "token-allocation"
+        "token",
+        "tokenomics"
       ]
     },
     {
@@ -80,23 +81,23 @@ const sidebars: SidebarsConfig = {
     },
     {
       "type": "category",
-      "label": "9. Vision & Appendix",
+      "label": "9. Appendix",
       "items": [
-        "future",
+        "future-plan",
         "dilemma",
-        "dilemma-tech",
         "faq",
         "faq-2",
-        "statement"
+        "faq-3",
       ]
     },
     {
       "type": "category",
-      "label": "10. Meaning",
+      "label": "10. Vision & Meaning",
       "items": [
         "commercial",
         "innovative",
         "enlightenment",
+        "statement",
         "thanks"
       ]
     }

@@ -5,8 +5,6 @@ sidebar:
   order: 5
 ---
 
-### Smart Contract Architecture
-
 Evidence Market uses modular smart contracts deployed on **Oasis Sapphire** (an EVM-compatible privacy public chain). Confidential data is stored on-chain in encrypted form, and permissions are verified via SIWE tokens.
 
 **Core Modules**
@@ -21,15 +19,15 @@ Evidence Market uses modular smart contracts deployed on **Oasis Sapphire** (an 
 
 #### Network and Contract Deployment (Mainnet/Testnet)
 
-| Project | Mainnet | Testnet |
-| --- | --- | --- |
-| Network Name | Oasis Sapphire | Oasis Sapphire Testnet |
-| Chain ID | 23294 | 23295 |
-| Block Explorer | TBD | [Oasis Sapphire Testnet explorer](https://explorer.oasis.io/testnet/sapphire/address/) |
-| AddressManager | TBD | 0x268863DAeaAdcB45aBb010402600Dea7C0a04744 |
-| EvidenceBox | TBD | 0x8Db771373077225aEb5Af7DFCa9ba33185ba0dB3 |
-| Exchange | TBD | 0x0499bd1974FF382A49D0008b413422518E71e06d |
-| FundManager | TBD | 0x154f826356776a75B748373aDD310a5BB449a268 |
-| UserManager | TBD | 0xeeF1c5Fd9bf0dFc8fD47D57c56B2ec9f52811CB2 |
-| SiweAuth | TBD | 0x6547F0a925BD522F029D0aFEC3A239aCDcE0122a |
-| Forwarder | TBD | 0x6553408789c9ca50FDCa0E3120245674F4C529ad |
+| Project        | Mainnet        | Testnet                                                                                |
+| -------------- | -------------- | -------------------------------------------------------------------------------------- |
+| Network Name   | Oasis Sapphire | Oasis Sapphire Testnet                                                                 |
+| Chain ID       | 23294          | 23295                                                                                  |
+| Block Explorer | TBD            | [Oasis Sapphire Testnet explorer](https://explorer.oasis.io/testnet/sapphire/address/) |
+| AddressManager | TBD            | 0x268863DAeaAdcB45aBb010402600Dea7C0a04744                                             |
+| EvidenceBox    | TBD            | 0x8Db771373077225aEb5Af7DFCa9ba33185ba0dB3                                             |
+| Exchange       | TBD            | 0x0499bd1974FF382A49D0008b413422518E71e06d                                             |
+| FundManager    | TBD            | 0x154f826356776a75B748373aDD310a5BB449a268                                             |
+| UserManager    | TBD            | 0xeeF1c5Fd9bf0dFc8fD47D57c56B2ec9f52811CB2                                             |
+| SiweAuth       | TBD            | 0x6547F0a925BD522F029D0aFEC3A239aCDcE0122a                                             |
+| Forwarder      | TBD            | 0x6553408789c9ca50FDCa0E3120245674F4C529ad                                             |

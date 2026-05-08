@@ -5,8 +5,6 @@ sidebar:
   order: 24
 ---
 
-### Important Statement
-
 Before using the Evidence Market platform or reading this white paper and related documents, please carefully read and understand the following statements. This document is for informational purposes only and does not constitute any form of offer, solicitation, or advice.
 
 #### 1. Not Investment Advice

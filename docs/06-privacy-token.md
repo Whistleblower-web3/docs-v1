@@ -5,15 +5,16 @@ sidebar:
   order: 6
 ---
 
-### Privacy Token
-
 The project developed a universal `ERC20privacy` contract based on the Oasis Sapphire privacy library to achieve balance encryption and private transfers. It provides a signature authorization interface based on **EIP-712** to complete token transactions without leaving traces on-chain.
+
+### Overview
 
 - **Balance Privacy**: The contract internally encrypts and stores balances. Normal queries only return data visible to the user themselves.
 - **Signature Authorization**: Supports EIP-712 based VIEW / TRANSFER / APPROVE permissions, avoiding the exposure of sensitive authorization details on-chain.
 - **No Event Logs**: Does not record event logs, preventing token transaction traces on the blockchain.
 - **Anti-Replay**: Uniqueness verification of signatures and expiration time limits prevent reuse.
-- **Wrap/Unwrap**: Can be wrapped/unwrapped with the base ERC20, making it compatible with external liquidity. Native tokens like sapphire testnet (TEST) can directly use deposit/withdraw interfaces.
+- **Wrap/Unwrap**: Can be wrapped/unwrapped with the base ERC20, making it compatible with external liquidity.
+- **Token Deposit/Withdraw**: Native tokens like sapphire testnet (TEST) can directly use this interfaces.
 
 After deploying the `ERC20privacy` contract, the `ERC20` token can be wrapped into an `ERC20privacy` token through the `wrap` and `unwrap` interfaces, thus realizing the minting of privacy tokens.
 

@@ -5,8 +5,6 @@ sidebar:
   order: 21
 ---
 
-### Future Outlook
-
 Evidence Market's vision is to build a Web3 on-chain crime and truth-exposing platform based on privacy encryption technology: Technology is responsible for being "verifiable", the economic model is responsible for being "sustainable", and the community is responsible for being "governable", making the defense of justice no longer a lonely fight for a few.
 
 #### Technology Development Direction

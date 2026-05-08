@@ -5,8 +5,6 @@ sidebar:
   order: 4
 ---
 
-## How Does the System Work?
-
 We will break down the complete lifecycle from "evidence minting" to "buyer's game" to "final publication".
 
 In the operation of the protocol, there are three core roles involved: **Whistleblower (Minter)**, **Buyer**, and **Helpers (Seller/Completer)**.

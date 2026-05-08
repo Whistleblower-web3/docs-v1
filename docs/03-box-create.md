@@ -5,7 +5,7 @@ sidebar:
   order: 10
 ---
 
-### Evidence Box Minting Process
+<!-- ### Evidence Box Minting Process -->
 
 ![Minting Process](/docs/create-process.svg)
 

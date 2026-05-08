@@ -5,8 +5,6 @@ sidebar:
   order: 1
 ---
 
-# Bounty Token
-
 If the Evidence Box is a passive blind box of "evidence first, buyer later", then the **Bounty Token** is an active intelligence network of "demand first, clues later".
 
 In the Evidence Market bounty market, a publisher can mint a Bounty Token, locking a certain amount of funds (such as `EMC`, `USDT`, etc.) in a smart contract to publicly solicit specific confidential clues from the global dark web and insiders.

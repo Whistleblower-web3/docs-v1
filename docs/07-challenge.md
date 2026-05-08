@@ -5,8 +5,6 @@ sidebar:
   order: 14
 ---
 
-## Threat Model & Anti-Abuse
-
 The "criminal evidence economy" that Evidence Market attempts to build is a reconstruction of the existing social governance model. Any system involving funds and confidential information will face extreme malicious attacks.
 
 We do not rely on the assumption of "human goodness", but follow the core principle of Web3: **Make doing evil economically unviable**. Below is the system's defense model against various core threats.

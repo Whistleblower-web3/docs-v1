@@ -5,8 +5,6 @@ sidebar:
   order: 22
 ---
 
-# Privacy Ecosystem Dilemma and Cross-Chain Exploration
-
 Evidence Market's core mechanisms (such as TEE encryption/decryption of evidence, EIP-712 anonymous relayer execution, and privacy token settlement) are heavily dependent on the EVM-compatible privacy computing capabilities provided by **Oasis Sapphire**.
 
 However, while enjoying its powerful security and privacy features, we must also honestly face the early stage of the current privacy public chain track and the resulting infrastructure dilemmas.
@@ -19,7 +17,7 @@ Although Oasis Sapphire has achieved a breakthrough at the technical base layer,
 
 ### Lack of a Truly Complete Privacy Token Ecosystem
 
-The current EVM ecosystem is accustomed to fully transparent ERC-20 and ERC-721 standards. Although the community is advancing token standards that support confidential balances like `ERC20Secret` or `ERC1363`, these standards **have not yet formed a broad market consensus**. This means that once a user's funds enter a purely private state, their on-chain use cases and compatibility are greatly reduced.
+The current EVM ecosystem is accustomed to fully transparent ERC-20 and ERC-721 standards. Although the community is advancing token standards that support confidential balances like `ERC20privacy` or `ERC1363`, these standards **have not yet formed a broad market consensus**. This means that once a user's funds enter a purely private state, their on-chain use cases and compatibility are greatly reduced.
 
 ### Lack of Prosperous DeFi Infrastructure and Liquidity
 

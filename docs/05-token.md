@@ -1,39 +1,11 @@
 ---
-title: Tokenomics
-description: Evidence Market's dual-engine driven model, EMC token value capture, and fund flow allocation.
+title: Token
+description: Evidence Market's EMC token value capture, and fund flow allocation.
 sidebar:
   order: 15
 ---
 
-# Tokenomics
-
-Evidence Market's Tokenomics aims to solve a core dilemma: **How to make "exposing the truth" and "upholding justice" an economically sustainable, and even profitable, behavior?**
-
-To this end, we have designed a **"Dual-Engine Driven"** model and a value capture network centered on `EMC`.
-
----
-
-## 1. Dual-Engine Driven Model
-
-Evidence Market's economic system does not merely rely on the moral sense of the "whistleblower" alone, but is driven by two real economic demands:
-
-### 🚗 Engine A: Passive Demand Driven (Evidence Box Mechanism)
-
-- **Scenario**: Whistleblowers hold confidential evidence and mint it into a blind box (Evidence Box).
-- **Source of Funds**: High-stakes stakeholders (such as exposed violating enterprises) **passively pay** buyout fees and **exponentially increasing Delay Premiums** to view the evidence or delay its publication.
-- **Features**: Based on game theory, forcing wrongdoers to pay a real economic price to cover up the truth.
-
-### 🏎️ Engine B: Active Demand Driven (Bounty Mechanism)
-
-- **Scenario**: Short-selling institutions, law enforcement agencies, or rights-defending groups **actively post bounties** to find specific truth evidence.
-- **Source of Funds**: Real money pre-locked in smart contracts by the bounty posters.
-- **Features**: Through a front-loaded funding pool, it provides whistleblowers with a clear sense of security and revenue expectations.
-
-> **Significance of the Dual Engines**: Upgrading the system from "relying on accidental revelations" to an intelligence market that "can actively create information demand".
-
----
-
-## 2. EMC Token Utility
+## 1. Token Utility
 
 `EMC` (Evidence Market Coin) is the native token of the ecosystem and possesses the following core utilities:
 
@@ -52,9 +24,9 @@ Evidence Market's economic system does not merely rely on the moral sense of the
 4. **Governance**:
    - Members holding `EMC` can participate in DAO voting to determine core protocol parameters (e.g., platform transaction cut ratio, delay fee growth curve coefficient, blacklist dispute arbitration, etc.).
 
----
+> For the deployed contract address, please refer to [Project Token](/docs/privacy-token).
 
-## 3. Platform Token Flow and Value Capture
+## 2. Platform Token Flow and Value Capture
 
 All transaction fees generated within the Evidence Market system will be trustlessly distributed through smart contracts:
 
@@ -66,6 +38,6 @@ All transaction fees generated within the Evidence Market system will be trustle
 
 ---
 
-## 4. Token Distribution Structure
+## 3. Token Distribution Structure
 
 > 💡 **Note: The token distribution plan will not be launched for now and will be announced at an appropriate time, but we will provide certain airdrops as rewards to early participants.**

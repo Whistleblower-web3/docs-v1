@@ -5,8 +5,6 @@ sidebar:
   order: 4
 ---
 
-# Reality & Legal Basis
-
 Evidence Market is not built outside the law, but is a digital extension of traditional judicial procedures in the Web3 era. Our core logic is derived from mature legal frameworks (such as the SEC and CFTC Whistleblower Programs).
 
 ## 1. Legal Basis: The Compliance Digital Cornerstone

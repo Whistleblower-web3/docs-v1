@@ -5,9 +5,7 @@ sidebar:
   order: 23
 ---
 
-# Acknowledgments
-
-> *"The truth will not disappear because no one listens, and justice will not stop because the road is rugged."*
+> _"The truth will not disappear because no one listens, and justice will not stop because the road is rugged."_
 
 Evidence Market's ability to evolve from a hardcore concept into a runnable protocol is inseparable from the joint efforts of many fellow travelers. Here, we express our most sincere gratitude to the following groups:
 

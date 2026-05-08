@@ -5,8 +5,6 @@ sidebar:
   order: 3
 ---
 
-# Core Product Introduction
-
 Evidence Market is a **dual-engine intelligence network** composed of two markets with complementary logics.
 
 To adapt to the information flow needs of different scenarios, the platform has built two independent sub-product sectors: **Evidence Box Market** and **Bounty Market**.

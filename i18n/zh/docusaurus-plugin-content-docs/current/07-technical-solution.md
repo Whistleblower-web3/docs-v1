@@ -5,8 +5,6 @@ sidebar:
   order: 3
 ---
 
-## 技术解决方案
-
 ### 我们如何构建Evidence Market
 
 ### 1. 代码即法律 (Code is Law)

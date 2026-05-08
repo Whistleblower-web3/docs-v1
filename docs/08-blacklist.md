@@ -5,9 +5,7 @@ sidebar:
   order: 20
 ---
 
-### Blacklist Mechanism
-
-The platform has a blacklist mechanism to restrict and punish behaviors such as maliciously uploading false evidence, attacking the platform, or money laundering. The addition and removal of the blacklist are decided by DAO community voting, ensuring open, transparent, and fair governance.
+The smart contracts has a blacklist mechanism to restrict and punish behaviors such as maliciously uploading false evidence, attacking the contract, or money laundering. The addition and removal of the blacklist are decided by DAO community voting, ensuring open, transparent, and fair governance.
 
 ### Decision Process
 

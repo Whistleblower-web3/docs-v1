@@ -1,5 +1,5 @@
 ﻿---
-title: 隐私支付
+title: 隐私支付（Zcash）
 description: Evidence Market 使用隐私代币进行支付，以保护用户隐私。
 sidebar:
   order: 6
