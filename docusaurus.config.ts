@@ -3,14 +3,14 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'EvidenceMarket Docs',
-  tagline: 'Decentralized whistleblower incentive and criminal evidence market',
+  title: 'Evidence Market Docs',
+  tagline: 'A decentralized intelligence marketplace that transforms “evidence of criminal activity”',
   favicon: '/logo/logo-black.svg',
 
-  url: 'https://docs.EvidenceMarket.xyz',
+  url: 'https://docs.wikitruth.xyz',
   baseUrl: '/',
-  organizationName: 'EvidenceMarket',
-  projectName: 'EvidenceMarket-docs',
+  organizationName: 'Evidence Market',
+  projectName: 'Evidence Market-docs',
 
   onBrokenLinks: 'warn',
   markdown: {

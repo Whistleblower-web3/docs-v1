@@ -105,7 +105,7 @@ html[data-theme='dark'],
 blockquote {
   background: rgba(46, 44, 58, 0.6);
   border-left: 4px solid var(--primary);
-  color: rgba(188, 230, 122, 0.8);
+  color: var(--ifm-color-primary-lighter);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 4px;
@@ -134,3 +134,19 @@ blockquote {
 .iconExternalLink {
   display: none !important;
 }
+
+/* Documentation Link Enhancements */
+.theme-doc-markdown a {
+  color: var(--ifm-color-primary-lighter);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  opacity: 0.8;
+}
+

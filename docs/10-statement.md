@@ -19,10 +19,8 @@ This document does not constitute legal, tax, or other professional advice. Laws
 
 The Evidence Market platform is built on complex Web3 and privacy computing technologies, including smart contracts, decentralized storage (IPFS/Arweave), Trusted Execution Environments (TEE), etc. Although the team will try its best to ensure code security, all software systems may have unknown vulnerabilities or errors. Technical risks include:
 
-- **Smart Contract Vulnerabilities**: May lead to fund loss or system failure.
 - **Cyber Attacks**: Including but not limited to DDoS attacks, supply chain attacks, or attacks against underlying blockchain networks.
 - **Privacy Computing Assumption Failure**: Fundamental assumptions of privacy technologies like TEE being breached, which may lead to confidential data leakage.
-- **Upgrade Risks**: New errors may be introduced or unforeseen impacts may occur during contract upgrades.
 
 #### 4. Regulatory Risks
 

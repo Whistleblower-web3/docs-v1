@@ -5,11 +5,15 @@ sidebar:
   order: 7
 ---
 
-## 用户隐私保护
+## 如何保护用户隐私？
 
 - **隐藏address**：协议交互基于钱包地址与 `UserId` 映射，在事件日志中不会暴露钱包地址，而以 `UserId` 代替，降低链上关联性。
+
 - **SIWE 权限验证**：读取重要数据需通过钱包签名 SIWE 令牌，合约并不提供地址参数访问函数。
-- **主网授权模式**：主网上线后将全面采用 EIP-712和ERC2771 签名授权 + 代理交互，减少链上可见行为。
+
+- **中继代理元交易**：主网将全面采用`ERC2771` 标准的中继代理元交易 + 中继合约`Forwarder`交互，不直接与合约交互，链上行为不可见。
+
+- **隐私支付**：支持基于`EIP-712`签名授权的隐私代币和`Zcash`屏蔽地址支付，隐藏用户支付信息。请查看[privacy-token](/docs/privacy-token)章节。
 
 ### UserManager合约
 
@@ -46,6 +50,23 @@ abstract contract IdentitySalt {
                 Sapphire.Curve25519SecretKey.wrap(_identitySalt)
             );
     }
+
+    /**
+     * @dev Base on SIWE contract
+     * @param siweToken_ SIWE token
+     * @return user_id User ID
+    */
+    function myUserId(bytes memory siweToken_) public view returns (bytes32) {
+        address sender = msg.sender;
+        if (sender == address(0)) {
+            // Use SiweContext get sender
+            sender = _msgSenderSiwe(SIWE_AUTH, siweToken_);
+        }
+        _checkInBlacklist(sender);
+
+        return _getUserId(sender);
+    }
+
 }
 
 ```

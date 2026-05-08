@@ -7,15 +7,27 @@ sidebar:
 
 Evidence Market uses modular smart contracts deployed on **Oasis Sapphire** (an EVM-compatible privacy public chain). Confidential data is stored on-chain in encrypted form, and permissions are verified via SIWE tokens.
 
-**Core Modules**
+### Base Modules
 
 - `AddressManager.sol`: Uniformly manages core contract addresses, DAOs, supported tokens, and DEX whitelists.
+
 - `SiweAuth.sol`: SIWE identity authentication, supporting multi-domain verification and adapting to Sapphire zero-address scenarios.
-- `UserManager.sol`: User ID/Blacklist management, used as contract event log parameters to protect on-chain identity privacy.
+
+- `UserManager.sol`: Generate user IDs and manage blacklists for users, replacing addresses as contract event log parameters to protect on-chain identity privacy. [Read more](/docs/user-privacy).
+
+- `Forwarder.sol`: Implements `ERC2771` standard meta transactions, supports gasless payment interactions, and ensures that user addresses do not directly interact with the contract.
+
+### Evidence Box Market
+
 - `EvidenceBox.sol`: The core asset contract, managing the state machine, pricing, and deadlines, using Sapphire TEE to store confidential data encryptedly.
+
 - `Exchange.sol`: The trading engine, handling the full process of Sell/Auction/Buy/Bid/Refund/Complete.
+
 - `FundManager.sol`: Fund custody and distribution, responsible for multi-currency payments, automatic exchange (DEX interaction), and yield distribution.
-- `Forwarder.sol`: ERC2771 relayer proxy interaction contract.
+
+### Bounty Market
+
+> The Bounty Market is still under development and has not been deployed to the testnet.
 
 #### Network and Contract Deployment (Mainnet/Testnet)
 

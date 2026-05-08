@@ -19,7 +19,10 @@ const sidebars: SidebarsConfig = {
       "type": "category",
       "label": "2. Solution & Product",
       "items": [
-        "product"
+        "solution",
+        "product",
+        "smart-contracts",
+        "user-privacy"
       ]
     },
        {
@@ -32,8 +35,7 @@ const sidebars: SidebarsConfig = {
         "box-market-process",
         "box-create",
         "box-exchange",
-        "box-rewards-fee",
-        "box-smart-contracts"
+        "box-rewards-fee"
       ]
     },
     {
@@ -64,9 +66,8 @@ const sidebars: SidebarsConfig = {
       "type": "category",
       "label": "7. Security Model",
       "items": [
-        "technical-solution",
-        "user-privacy",
-        "challenge"
+        "challenge",
+        "blacklist"
       ]
     },
     {
@@ -74,7 +75,6 @@ const sidebars: SidebarsConfig = {
       "label": "8. Governance & Legal",
       "items": [
         "dao",
-        "blacklist",
         "legal-and-cases",
         "legal-challenge"
       ]

@@ -1,6 +1,6 @@
 ﻿---
 title: 黑名单
-description: 维护生态健康与合规的黑名单治理规则。
+description: 维护生态健康的黑名单规则。
 sidebar:
   order: 20
 ---

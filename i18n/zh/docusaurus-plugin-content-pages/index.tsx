@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title="EvidenceMarket 文档"
+      title="Evidence Market 文档"
       description="一个将“犯罪证据”转化为可交易资产的去中心化情报市场">
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8">
@@ -44,16 +44,28 @@ export default function Home(): JSX.Element {
               <p className="text-white/70 text-sm">了解我们的核心产品</p>
             </Link>
             <Link
-              to="/docs/evidence-box-smart-contracts"
+              to="/docs/box-smart-contracts"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">技术文档</h3>
               <p className="text-white/70 text-sm">智能合约架构和技术实现</p>
             </Link>
             <Link
-              to="/docs/evidence-box"
+              to="/docs/box"
               className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
               <h3 className="text-primary font-semibold mb-2">功能细节</h3>
               <p className="text-white/70 text-sm">真相盒子、状态机制等功能</p>
+            </Link>
+            <Link
+              to="/docs/privacy-token"
+              className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
+              <h3 className="text-primary font-semibold mb-2">隐私代币</h3>
+              <p className="text-white/70 text-sm">隐私代币介绍、支付方式的细节</p>
+            </Link>
+            <Link
+              to="/docs/user-privacy"
+              className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition border border-white/10">
+              <h3 className="text-primary font-semibold mb-2">用户隐私</h3>
+              <p className="text-white/70 text-sm">用户隐私的实现细节</p>
             </Link>
             <Link
               to="/docs/faq"

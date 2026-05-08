@@ -8,8 +8,12 @@ sidebar:
 ### User Privacy Protection
 
 - **Hidden Addresses**: Protocol interaction is based on mapping wallet addresses to `UserId`s. Wallet addresses will not be exposed in event logs, using `UserId` instead to reduce on-chain associativity.
+
 - **SIWE Permission Verification**: Reading important data requires a wallet signature SIWE token, and the contract does not provide address parameter access functions.
-- **Mainnet Authorization Mode**: After the mainnet launch, it will fully adopt EIP-712 and ERC2771 signature authorization + proxy interaction, reducing visible on-chain behavior.
+
+- **Relay Proxy Meta Transactions**: The mainnet will fully adopt the `ERC2771` standard for relay proxy meta transactions + relay contract `Forwarder` interaction, without direct interaction with the contract, and on-chain behavior is not visible.
+
+- **Privacy Payments**: Supports payments via privacy tokens and Zcash masked addresses authorized by `EIP-712` signatures, hiding user payment information. Please see the [privacy-token](/docs/privacy-token) section.
 
 ### UserManager Contract
 
@@ -45,6 +49,22 @@ abstract contract IdentitySalt {
                 Sapphire.Curve25519PublicKey.wrap(contextSalt),
                 Sapphire.Curve25519SecretKey.wrap(_identitySalt)
             );
+    }
+
+    /**
+     * @dev Base on SIWE contract
+     * @param siweToken_ SIWE token
+     * @return user_id User ID
+    */
+    function myUserId(bytes memory siweToken_) public view returns (bytes32) {
+        address sender = msg.sender;
+        if (sender == address(0)) {
+            // Use SiweContext get sender
+            sender = _msgSenderSiwe(SIWE_AUTH, siweToken_);
+        }
+        _checkInBlacklist(sender);
+
+        return _getUserId(sender);
     }
 }
 

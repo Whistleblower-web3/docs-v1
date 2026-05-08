@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Wiki Truth",
+    "message": "Evidence Market",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Wiki Truth Logo",
+    "message": "Evidence Market Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Home": {

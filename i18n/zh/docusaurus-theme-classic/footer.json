@@ -12,7 +12,7 @@
         "description": "The label of footer link with label=Terms of Service linking to #"
     },
     "copyright": {
-        "message": "© 2025 EvidenceMarket。保留所有权利。",
+        "message": "© 2025 Evidence Market。保留所有权利。",
         "description": "The footer copyright"
     }
 }

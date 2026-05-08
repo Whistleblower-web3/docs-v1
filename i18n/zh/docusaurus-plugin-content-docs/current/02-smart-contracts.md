@@ -7,15 +7,27 @@ sidebar:
 
 Evidence Market 采用模块化智能合约，部署在 **Oasis Sapphire**（EVM 兼容隐私公链）。机密数据在链上以加密形式存储，并通过 SIWE 令牌校验权限。
 
-**核心模块**
+### 基础模块
 
 - `AddressManager.sol`：统一管理核心合约地址、DAO、支持代币与 DEX 白名单。
+
 - `SiweAuth.sol`：SIWE 身份认证，支持多域名校验，适配 Sapphire 零地址场景。
-- `UserManager.sol`：用户 ID/黑名单管理，用来作为合约事件日志参数，保护链上身份隐私。
+
+- `UserManager.sol`：为用户生成`userID`、黑名单管理，替代address作为合约事件日志参数，保护链上身份隐私。[阅读更多](/docs/user-privacy)。
+
+- `Forwarder.sol`: 实现`ERC2771`标准元交易，支持代理支付（Gasless）交互, 也确保用户地址不会直接与合约进行交互。
+
+### Evidence Box Market
+
 - `EvidenceBox.sol`：核心资产合约，管理状态机、定价与期限，使用 Sapphire TEE 加密存储机密数据。
+
 - `Exchange.sol`：交易引擎，处理 Sell/Auction/Buy/Bid/Refund/Complete 全流程。
+
 - `FundManager.sol`：资金托管与分配，负责多币种支付、自动兑换 (DEX 交互) 及收益分配。
-- `Forwarder.sol`: ERC2771中继代理交互合约。
+
+### Bounty Market
+
+> 当前 Bounty Market 还在开发中，并未在测试网进行部署。
 
 #### 网络与合约部署（主网/测试网）
 

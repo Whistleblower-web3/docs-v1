@@ -13,7 +13,11 @@
       "type": "category",
       "label": "2. 解决方案与产品 (Solution & Product)",
       "items": [
-        "02-product"
+        "02-solution",
+        "02-product",
+        "02-smart-contracts",
+        "02-user-privacy"
+
       ]
     },
     {
@@ -26,8 +30,7 @@
         "03-box-market-process",
         "03-box-create",
         "03-box-exchange",
-        "03-box-rewards-fee",
-        "03-box-smart-contracts"
+        "03-box-rewards-fee"
       ]
     },
     {
@@ -58,9 +61,8 @@
       "type": "category",
       "label": "7. 安全与防御模型 (Security Model)",
       "items": [
-        "07-technical-solution",
-        "07-user-privacy",
-        "07-challenge"
+        "07-challenge",
+        "07-blacklist"
       ]
     },
     {
@@ -68,7 +70,6 @@
       "label": "8. 治理与合规 (Governance & Legal)",
       "items": [
         "08-dao",
-        "08-blacklist",
         "08-legal-and-cases",
         "08-legal-challenge"
       ]
